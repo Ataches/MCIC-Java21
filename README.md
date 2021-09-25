@@ -1,5 +1,14 @@
 # 21 - Black Jack - desarrollo basado en pruebas
 
+## Integrantes
+
+- Lider: Norbey Danilo Muñoz
+- Javier Hospital Melo
+- Brayan Leonardo Sierra
+- Juan Sebastián Sánchez
+- Camilo Enrique Rocha
+- Ivan Daniel Villegas
+
 ## Historias de usuario
 
 ### Jugador

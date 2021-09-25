@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="fb337225-0ac3-4743-9f1f-30e95324c398" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ing_software/veintiuno/Launcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ing_software/veintiuno/Launcher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ing_software/veintiuno/JugadorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ing_software/veintiuno/JugadorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +124,7 @@
       <option name="presentableId" value="Default" />
       <updated>1632570473367</updated>
       <workItem from="1632570474872" duration="214000" />
-      <workItem from="1632570696596" duration="1464000" />
+      <workItem from="1632570696596" duration="3340000" />
     </task>
     <servers />
   </component>
