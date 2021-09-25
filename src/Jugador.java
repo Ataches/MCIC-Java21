@@ -1,7 +1,7 @@
 import java.util.*;
 import java.util.stream.Collectors;
 
-class  Jugador { // Jugador que tiene las cartas y a su vez metodos para el calculo de su puntaje
+public class  Jugador { // Jugador que tiene las cartas y a su vez metodos para el calculo de su puntaje
     private String nombreJugador;
     private int puntaje;
     private List<Carta> jugadorCartas = new ArrayList<>();

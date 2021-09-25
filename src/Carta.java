@@ -2,7 +2,7 @@ import java.util.*;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
-class  Carta { // Clase que representa una carta con valor y pinta
+public class  Carta { // Clase que representa una carta con valor y pinta
     String valor;
     String pinta;
 

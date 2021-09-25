@@ -1,7 +1,7 @@
 import java.util.*;
 import java.util.stream.Collectors;
 
-class Ventiuno { // Clase principal que dirige el juego dependiendo de las decisiones del jugador 
+public class Ventiuno { // Clase principal que dirige el juego dependiendo de las decisiones del jugador
     public static final String[] pintas = {"Corazones", "Picas", "Diamante", "Trébol"};
     public static final String[] valores = {"As", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"};
 
