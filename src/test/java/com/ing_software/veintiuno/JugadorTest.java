@@ -1,7 +1,7 @@
 package com.ing_software.veintiuno;
 
 
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.assertFalse;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -11,17 +11,17 @@ public class JugadorTest {
 	private Jugador jugador;
 	
 	@Before
-	public void setup() throws InterruptedException{
+	public void setup() {
 		jugador = new Jugador("jugador");
 	}
 	
 	@Test
-	public void test() throws InterruptedException {
+	public void test() {
 		Carta carta = new Carta("3", "Corazones");
 
 		jugador.addCarta(carta);
 
 		// cards should not be empty
-		assertTrue(!jugador.getCartas().isEmpty());
+		assertFalse(jugador.getCartas().isEmpty());
 	}
 }

@@ -5,16 +5,16 @@ public class Veintiuno { // Clase principal que dirige el juego dependiendo de l
     public static final String[] pintas = {"Corazones", "Picas", "Diamante", "Trébol"};
     public static final String[] valores = {"As", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"};
 
-    private List<Carta> mazo = new ArrayList<>();
-    private List<Jugador> jugadores = new ArrayList<>();
+    private final List<Carta> mazo = new ArrayList<>();
+    private final List<Jugador> jugadores = new ArrayList<>();
     private final Scanner sc= new Scanner(System.in);
     private boolean jugadorContinua=true;
     private boolean finalizo=false;
 
-    private Random random = new Random();
+    private final Random random = new Random();
 
 
-    public void launch(){ // Metodo principal que dependiendo de la continuación o juego del jugador direcciona la partida
+    public void empezarJuego(){ // Metodo principal que dependiendo de la continuación o juego del jugador direcciona la partida
         generarMazo();
         jugadores.add(new Jugador("casa"));
         jugadores.add(new Jugador("jugador"));
@@ -32,9 +32,9 @@ public class Veintiuno { // Clase principal que dirige el juego dependiendo de l
     } 
     
     public List<Carta> generarMazo(){ // Genera el mazo a partir de las cartas que se contiene en el array y pintas
-        for (int i = 0; i < pintas.length; i++){
-            for (int j = 0; j < valores.length; j++){
-                Carta carta = new Carta(valores[j], pintas[i]);
+        for (String pinta : pintas) {
+            for (String valore : valores) {
+                Carta carta = new Carta(valore, pinta);
                 mazo.add(carta);
             }
         }
@@ -101,6 +101,4 @@ public class Veintiuno { // Clase principal que dirige el juego dependiendo de l
     }
     // -  Arreglar cuando la casa se pasa
     // -  Revisar el if puntajeCasa linea 156
-    // -  No recargar el main
-    // -  Separar en clases .java
 }

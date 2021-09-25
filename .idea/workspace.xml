@@ -5,32 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fb337225-0ac3-4743-9f1f-30e95324c398" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.breakpoints" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.jdt.apt.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Carta.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jugador.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VentiunoConsola.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Carta.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Jugador.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Veintiuno.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stepDefinitions/StepDefinitions.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dependency/cucumber-core-1.2.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dependency/cucumber-html-0.2.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dependency/cucumber-java-1.2.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dependency/cucumber-junit-1.2.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dependency/cucumber-jvm-deps-1.0.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dependency/gherkin-2.12.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dependency/hamcrest-core-1.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dependency/junit-4.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testRunner/TestRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ing_software/veintiuno/Launcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ing_software/veintiuno/Launcher.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,13 +42,14 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.ing_software.veintiuno" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.JugadorTest.test">
+  <component name="RunManager" selected="Application.Launcher">
     <configuration name="Launcher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ing_software.veintiuno.Launcher" />
       <module name="cuke-test.so" />
@@ -132,9 +109,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Launcher" />
         <item itemvalue="JUnit.JugadorTest.test" />
         <item itemvalue="JUnit.JugadorTest" />
-        <item itemvalue="Application.Launcher" />
       </list>
     </recent_temporary>
   </component>
@@ -147,7 +124,7 @@
       <option name="presentableId" value="Default" />
       <updated>1632570473367</updated>
       <workItem from="1632570474872" duration="214000" />
-      <workItem from="1632570696596" duration="881000" />
+      <workItem from="1632570696596" duration="1464000" />
     </task>
     <servers />
   </component>
