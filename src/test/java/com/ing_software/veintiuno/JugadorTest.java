@@ -57,4 +57,53 @@ public class JugadorTest {
 		// cards added to player should be card type
 		assertEquals("jugador", jugador.getNombre());
 	}
+
+	@Test
+	public void testSumarPuntosString() {
+		// cards added to player should be card type
+		assertEquals(10, jugador.sumarPuntos("J"));
+	}
+
+	@Test
+	public void testSumarPuntosString2() {
+		// cards added to player should be card type
+		assertEquals(10, jugador.sumarPuntos("Q"));
+	}
+
+	@Test
+	public void testSumarPuntosString3() {
+		// cards added to player should be card type
+		assertEquals(11, jugador.sumarPuntos("As"));
+	}
+
+	@Test
+	public void testSumarPuntosString4() {
+		Carta carta = new Carta("3", "Corazones");
+		Carta carta2 = new Carta("Q", "Picas");
+		jugador.addCarta(carta);
+		jugador.addCarta(carta2);
+		jugador.sumarPuntos();
+		// cards added to player should be card type
+		assertEquals(1, jugador.sumarPuntos("As"));
+	}
+
+	@Test
+	public void testImprimirStringTrue() {
+		Carta carta = new Carta("3", "Corazones");
+		Carta carta2 = new Carta("10", "Corazones");
+		jugador.addCarta(carta);
+		jugador.addCarta(carta2);
+		// cards added to player should be card type
+		assertEquals("[(X, X)], [(10, Corazones)]", jugador.imprimirCartas(true));
+	}
+
+	@Test
+	public void testImprimirStringFalse() {
+		Carta carta = new Carta("3", "Corazones");
+		Carta carta2 = new Carta("10", "Picas");
+		jugador.addCarta(carta);
+		jugador.addCarta(carta2);
+		// cards added to player should be card type
+		assertEquals("[(3, Corazones)], [(10, Picas)]", jugador.imprimirCartas(false));
+	}
 }

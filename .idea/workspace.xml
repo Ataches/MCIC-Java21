@@ -49,7 +49,7 @@
       <recent name="com.ing_software.veintiuno" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.JugadorTest.testGetNombre">
+  <component name="RunManager" selected="JUnit.JugadorTest.testImprimirStringFalse">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -63,7 +63,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JugadorTest.testGetCarta" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Launcher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ing_software.veintiuno.Launcher" />
+      <module name="cuke-test.so" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ing_software.veintiuno.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JugadorTest.testImprimirStringFalse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cuke-test.so" />
       <extension name="coverage">
         <pattern>
@@ -73,13 +86,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.ing_software.veintiuno" />
       <option name="MAIN_CLASS_NAME" value="com.ing_software.veintiuno.JugadorTest" />
-      <option name="METHOD_NAME" value="testGetCarta" />
+      <option name="METHOD_NAME" value="testImprimirStringFalse" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JugadorTest.testGetCarta2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="JugadorTest.testImprimirStringTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cuke-test.so" />
       <extension name="coverage">
         <pattern>
@@ -89,13 +102,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.ing_software.veintiuno" />
       <option name="MAIN_CLASS_NAME" value="com.ing_software.veintiuno.JugadorTest" />
-      <option name="METHOD_NAME" value="testGetCarta2" />
+      <option name="METHOD_NAME" value="testImprimirStringTrue" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JugadorTest.testGetNombre" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="JugadorTest.testSumarPuntosString3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cuke-test.so" />
       <extension name="coverage">
         <pattern>
@@ -105,13 +118,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.ing_software.veintiuno" />
       <option name="MAIN_CLASS_NAME" value="com.ing_software.veintiuno.JugadorTest" />
-      <option name="METHOD_NAME" value="testGetNombre" />
+      <option name="METHOD_NAME" value="testSumarPuntosString3" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JugadorTest.testGetPuntaje" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="JugadorTest.testSumarPuntosString4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cuke-test.so" />
       <extension name="coverage">
         <pattern>
@@ -121,23 +134,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.ing_software.veintiuno" />
       <option name="MAIN_CLASS_NAME" value="com.ing_software.veintiuno.JugadorTest" />
-      <option name="METHOD_NAME" value="testGetPuntaje" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JugadorTest.testSumarPuntos" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cuke-test.so" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ing_software.veintiuno.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ing_software.veintiuno" />
-      <option name="MAIN_CLASS_NAME" value="com.ing_software.veintiuno.JugadorTest" />
-      <option name="METHOD_NAME" value="testSumarPuntos" />
+      <option name="METHOD_NAME" value="testSumarPuntosString4" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -145,11 +142,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.JugadorTest.testGetNombre" />
-        <item itemvalue="JUnit.JugadorTest.testGetCarta2" />
-        <item itemvalue="JUnit.JugadorTest.testGetPuntaje" />
-        <item itemvalue="JUnit.JugadorTest.testSumarPuntos" />
-        <item itemvalue="JUnit.JugadorTest.testGetCarta" />
+        <item itemvalue="JUnit.JugadorTest.testImprimirStringFalse" />
+        <item itemvalue="JUnit.JugadorTest.testImprimirStringTrue" />
+        <item itemvalue="Application.Launcher" />
+        <item itemvalue="JUnit.JugadorTest.testSumarPuntosString4" />
+        <item itemvalue="JUnit.JugadorTest.testSumarPuntosString3" />
       </list>
     </recent_temporary>
   </component>
@@ -164,7 +161,8 @@
       <workItem from="1632570474872" duration="214000" />
       <workItem from="1632570696596" duration="3340000" />
       <workItem from="1632696924377" duration="1018000" />
-      <workItem from="1632750225139" duration="3897000" />
+      <workItem from="1632750225139" duration="6970000" />
+      <workItem from="1632774556669" duration="1789000" />
     </task>
     <servers />
   </component>
