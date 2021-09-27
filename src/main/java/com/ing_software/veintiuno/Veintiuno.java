@@ -5,10 +5,10 @@ public class Veintiuno { // Clase principal que dirige el juego dependiendo de l
     public static final String[] pintas = {"Corazones", "Picas", "Diamante", "Trébol"};
     public static final String[] valores = {"As", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"};
 
-    private final List<Carta> mazo = new ArrayList<>();
-    private final List<Jugador> jugadores = new ArrayList<>();
+    public final List<Carta> mazo = new ArrayList<>();
+    public final List<Jugador> jugadores = new ArrayList<>();
     private final Scanner sc= new Scanner(System.in);
-    private boolean jugadorContinua=true;
+    public boolean jugadorContinua=true;
     private boolean finalizo=false;
 
     private final Random random = new Random();
