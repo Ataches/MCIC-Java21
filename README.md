@@ -19,25 +19,25 @@ IntelliJ IDEA
 
 ### Jugador
 
-- __Como__ jugador __quiero__ que al inicio del juego me repartan dos cartas, __para__ calcular si deseo otra carta o me planto.
+- :white_check_mark: __Como__ jugador __quiero__ que al inicio del juego me repartan dos cartas, __para__ calcular si deseo otra carta o me planto.
 
-- __Como__ jugador __quiero__ recibir todas las cartas que solicite a la casa siempre y cuando mi mano no supere 21 puntos, __para__ incrementar el valor de mi mano.
+- :white_check_mark: __Como__ jugador __quiero__ recibir todas las cartas que solicite a la casa siempre y cuando mi mano no supere 21 puntos, __para__ incrementar el valor de mi mano.
 
-- ~__Como__ jugador __quiero__ dejar de recibir cartas __para__ plantarme.~
+- :x: ~__Como__ jugador __quiero__ dejar de recibir cartas __para__ plantarme.~
 
-- __Como__ jugador __quiero__ tener una mano mayor al puntaje de la casa y menor a 21 puntos __para__ ganar el juego.
+- :white_check_mark: __Como__ jugador __quiero__ tener una mano mayor al puntaje de la casa y menor a 21 puntos __para__ ganar el juego.
 
 ### Casa 
 
--	__Como__ casa __quiero__ que al inicio del juego me repartan dos cartas, __para__ calcular si deseo otra carta o me planto.
+- :white_check_mark:	__Como__ casa __quiero__ que al inicio del juego me repartan dos cartas, __para__ calcular si deseo otra carta o me planto.
 
-- __Como__ casa __quiero__ recibir todas las cartas necesarias __para__ intentar llegar a 21 para vencer al jugador.
+- :white_check_mark: __Como__ casa __quiero__ recibir todas las cartas necesarias __para__ intentar llegar a 21 para vencer al jugador.
 
-- __Como__ casa __quiero__ realizar el conteo para mi mano y la del jugador __para__ establecer el ganador y terminar la partida.
+- :white_check_mark: __Como__ casa __quiero__ realizar el conteo para mi mano y la del jugador __para__ establecer el ganador y terminar la partida.
 
-- __Como__ casa __quiero__ tener un puntaje igual o superior al obtenido por el jugador __para__ ganar el juego.
+- :x: __Como__ casa __quiero__ tener un puntaje igual o superior al obtenido por el jugador __para__ ganar el juego.
 
--	__Como__ casa __quiero__ conocer el resultado final del juego __para__ saber si gané o perdí.
+- :x:	__Como__ casa __quiero__ conocer el resultado final del juego __para__ saber si gané o perdí.
 
 
 ## Reglas
