@@ -2,7 +2,6 @@ package com.ing_software.veintiuno;
 
 import org.junit.Test;
 import org.junit.jupiter.api.BeforeAll;
-import org.mockito.Mock;
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
@@ -12,8 +11,6 @@ import static org.junit.Assert.assertEquals;
 public class VentiunoTest {
 
     Veintiuno _ventiunoObject= new Veintiuno();
-
-    Veintiuno _ventiunoObjectMock= mock(Veintiuno.class);
 
     @BeforeAll
     public static void setUpClass() throws UnsupportedEncodingException {
