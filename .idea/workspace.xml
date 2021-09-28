@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="fb337225-0ac3-4743-9f1f-30e95324c398" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ing_software/veintiuno/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ing_software/veintiuno/Launcher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ing_software/veintiuno/Veintiuno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ing_software/veintiuno/Veintiuno.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ing_software/veintiuno/Veintiuno.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ing_software/veintiuno/Veintiuno.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +116,16 @@
       <workItem from="1632793498964" duration="2510000" />
       <workItem from="1632796344174" duration="237000" />
       <workItem from="1632825914389" duration="2451000" />
+      <workItem from="1632831860796" duration="918000" />
     </task>
+    <task id="LOCAL-00001" summary="fix: methods: get card from deck and get player">
+      <created>1632829569493</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1632829569493</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,5 +153,10 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fix: methods: get card from deck and get player" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: methods: get card from deck and get player" />
   </component>
 </project>
