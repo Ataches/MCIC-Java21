@@ -1,49 +1,26 @@
-package com.cucumber.stepDefinition;
+package com.cucumber.stepDefinitionJugador;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 
-import com.ing_software.veintiuno.Carta;
 import com.ing_software.veintiuno.Jugador;
 
 import com.ing_software.veintiuno.Veintiuno;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import io.cucumber.java.es.Cuando;
-import io.cucumber.java.es.Dado;
-import io.cucumber.java.es.Entonces;
 
 
 
 public class jugadorSteps {
-	private Jugador jugador;
 	private Veintiuno veintiuno;
-	public int puntaje;
 	public boolean estado;
-
-/*	@Dado("Dado que soy un jugador")
-	@Given("I am a player")
-	public void i_am_a_player() {
-		jugador = new Jugador("jugador");
-	}
-
-	@Cuando("recibo mis dos primeras cartas {carta}, {carta}")
-	@When("I receive my first two cards")
-	public void i_fill_the_name_field_with(Carta primeraCarta, Carta segundaCarta) {
-		jugador.addCarta(primeraCarta);
-		jugador.addCarta(segundaCarta);
-	}
-
-	@Entonces("mi mazo no debe estar vacio")
-	@Then("my deck should not be empty")
-	public void the_field_email_should_not_be_empty() {
-		assertFalse(jugador.getCartas().isEmpty());
-	}*/
 
 	@Given("un jugador")
 	public void un_jugador() {
 		veintiuno = new Veintiuno();
 		veintiuno.jugadores.add(new Jugador("jugador"));
+		veintiuno.jugadores.add(new Jugador("casa"));
 		veintiuno.getJugador("jugador");
 	}
 
@@ -81,4 +58,15 @@ public class jugadorSteps {
 			veintiuno.getJugador("jugador").addCarta(veintiuno.sacarCartaMazo());
 	}
 
+	//-------------------------------------------------------------------------------------------------------------
+
+	@When("se conoce el {int} y el {int}")
+	public void se_conoce_el_puntaje_jugador_y_el_puntaje_casa(int puntaje_jugador, int puntaje_casa) {
+		veintiuno.getJugador("jugador").setPuntaje(puntaje_jugador);
+		veintiuno.getJugador("casa").setPuntaje(puntaje_casa);
+	}
+	@Then("se conoce el {string}")
+	public void se_conoce_el_ganador(String ganador) {
+		assertEquals(veintiuno.imprimirResultado(),ganador);
+	}
 }

@@ -6,15 +6,13 @@ import java.util.stream.Collectors;
 
 public class  Jugador { // Jugador que tiene las cartas y a su vez metodos para el calculo de su puntaje
     private final String nombreJugador;
+
+
     private int puntaje;
     private final List<Carta> jugadorCartas = new ArrayList<>();
 
     public Jugador(String nombreJugador) {
       this.nombreJugador = nombreJugador;
-    }
-    
-    public int getPuntaje() {
-      return puntaje;
     }
     
     public String getNombre() {
@@ -58,5 +56,12 @@ public class  Jugador { // Jugador que tiene las cartas y a su vez metodos para 
             return 1;
         }
         return Integer.parseInt(carta);
+    }
+
+    public void setPuntaje(int puntaje) {
+        this.puntaje = puntaje;
+    }
+    public int getPuntaje() {
+        return puntaje;
     }
 }
