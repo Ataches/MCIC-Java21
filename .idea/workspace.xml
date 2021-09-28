@@ -5,10 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fb337225-0ac3-4743-9f1f-30e95324c398" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ing_software/veintiuno/VentiunoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_8_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_8_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_8_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_8_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_8_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_8_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cuke-test.so.iml" beforeDir="false" afterPath="$PROJECT_DIR$/cuke-test.so.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ing_software/veintiuno/VentiunoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ing_software/veintiuno/VentiunoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ing_software/veintiuno/VentiunoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ing_software/veintiuno/VentiunoTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +49,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -51,7 +60,7 @@
       <recent name="com.ing_software.veintiuno" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.VentiunoTest.getJugadorTest">
+  <component name="RunManager" selected="JUnit.VentiunoTest.sacarCartaMazo">
     <configuration name="Launcher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ing_software.veintiuno.Launcher" />
       <module name="cuke-test.so" />
@@ -61,37 +70,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JugadorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cuke-test.so" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ing_software.veintiuno.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ing_software.veintiuno" />
-      <option name="MAIN_CLASS_NAME" value="com.ing_software.veintiuno.JugadorTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JugadorTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cuke-test.so" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ing_software.veintiuno.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ing_software.veintiuno" />
-      <option name="MAIN_CLASS_NAME" value="com.ing_software.veintiuno.JugadorTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -128,13 +106,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="VentiunoTest.sacarCartaMazo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cuke-test.so" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ing_software.veintiuno.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ing_software.veintiuno" />
+      <option name="MAIN_CLASS_NAME" value="com.ing_software.veintiuno.VentiunoTest" />
+      <option name="METHOD_NAME" value="sacarCartaMazo" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VentiunoTest.simulateGetJugadorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cuke-test.so" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ing_software.veintiuno.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ing_software.veintiuno" />
+      <option name="MAIN_CLASS_NAME" value="com.ing_software.veintiuno.VentiunoTest" />
+      <option name="METHOD_NAME" value="simulateGetJugadorTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.VentiunoTest.sacarCartaMazo" />
+        <item itemvalue="JUnit.VentiunoTest.simulateGetJugadorTest" />
         <item itemvalue="JUnit.VentiunoTest.getJugadorTest" />
         <item itemvalue="JUnit.VentiunoTest.getJugador" />
         <item itemvalue="Application.Launcher" />
-        <item itemvalue="JUnit.JugadorTest.test" />
-        <item itemvalue="JUnit.JugadorTest" />
       </list>
     </recent_temporary>
   </component>
@@ -165,5 +175,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/MCIC_Java21$VentiunoTest_getJugadorTest.ic" NAME="VentiunoTest.getJugadorTest Coverage Results" MODIFIED="1632798325035" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.ing_software.veintiuno.*</FILTER>
+    </SUITE>
   </component>
 </project>
