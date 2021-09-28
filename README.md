@@ -9,6 +9,12 @@
 - Camilo Enrique Rocha
 - Ivan Daniel Villegas
 
+### Entorno de desarrollo
+
+```
+IntelliJ IDEA
+```
+
 ## Historias de usuario
 
 ### Jugador
@@ -52,3 +58,9 @@
 - **Plantarse:** Ya sea de inicio o tras haber pedido carta, si el jugador considera que tiene una jugada que puede ganar, o que pedir más cartas podría hacerle pasarse de 21, tiene la opción de cerrar su jugada y esperar el turno del crupier plantándose.
 
 - **Pedir carta:** Con el fin de alcanzar 21 o acercarse lo máximo posible, se pueden pedir tantas cartas como se quieran hasta que se supere la suma objetivo. Si la suma de cartas supera 21 el jugador se ha pasado, se retirarán sus cartas y la apuesta correspondiente a esa mano.
+
+## Pruebas unitarias
+
+
+
+## Pruebas de aceptación

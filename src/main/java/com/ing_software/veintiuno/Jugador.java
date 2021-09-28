@@ -8,6 +8,7 @@ public class  Jugador { // Jugador que tiene las cartas y a su vez metodos para 
     private final String nombreJugador;
     private int puntaje;
     private final List<Carta> jugadorCartas = new ArrayList<>();
+    private final List<String> jugadorAses = new ArrayList<>();
 
     public Jugador(String nombreJugador) {
       this.nombreJugador = nombreJugador;
@@ -44,6 +45,14 @@ public class  Jugador { // Jugador que tiene las cartas y a su vez metodos para 
     
     public int sumarPuntos(){
       puntaje = jugadorCartas.stream().mapToInt(carta -> sumarPuntos(carta.valor)).sum();
+      final int[] cantidadAses = {jugadorAses.size()};
+      if (puntaje > 21)
+          jugadorAses.forEach(a -> {
+              cantidadAses[0] -= 1;
+              if ( 21 <= (cantidadAses[0] + puntaje))
+                  puntaje -= 10;
+          });
+      jugadorAses.clear();
       return puntaje;
     }
 
@@ -52,10 +61,8 @@ public class  Jugador { // Jugador que tiene las cartas y a su vez metodos para 
             return 10;
         }
         if(carta.equals("As")){
-          if((puntaje+11)<=21)
+            jugadorAses.add(carta);
             return 11;
-          else
-            return 1;
         }
         return Integer.parseInt(carta);
     }

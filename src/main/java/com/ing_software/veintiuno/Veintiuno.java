@@ -31,14 +31,13 @@ public class Veintiuno { // Clase principal que dirige el juego dependiendo de l
         System.out.println(imprimirResultado());
     } 
     
-    public List<Carta> generarMazo(){ // Genera el mazo a partir de las cartas que se contiene en el array y pintas
+    public void generarMazo(){ // Genera el mazo a partir de las cartas que se contiene en el array y pintas
         for (String pinta : pintas) {
-            for (String valore : valores) {
-                Carta carta = new Carta(valore, pinta);
+            for (String valor : valores) {
+                Carta carta = new Carta(valor, pinta);
                 mazo.add(carta);
             }
         }
-        return mazo;
     }
 
     public void jugar(String nombreJugador){
@@ -90,7 +89,8 @@ public class Veintiuno { // Clase principal que dirige el juego dependiendo de l
     }
 
     public Carta sacarCartaMazo(){
-        return mazo.remove(random.nextInt(mazo.size())+1);
+        int numeroAleatorio = (int) (Math.random()*mazo.size());
+        return mazo.remove(numeroAleatorio);
     }
 
     public Jugador getJugador(String nombreJugador){
@@ -100,5 +100,5 @@ public class Veintiuno { // Clase principal que dirige el juego dependiendo de l
       .orElse(null);
     }
     // -  Arreglar cuando la casa se pasa
-    // -  Revisar el if puntajeCasa linea 156
+    // -  Revisar el if puntajeCasa linea 82
 }
