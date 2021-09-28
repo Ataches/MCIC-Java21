@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb337225-0ac3-4743-9f1f-30e95324c398" name="Default Changelist" comment="">
+    <list default="true" id="fb337225-0ac3-4743-9f1f-30e95324c398" name="Default Changelist" comment="Prueba métodos imprimir String">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ing_software/veintiuno/JugadorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ing_software/veintiuno/JugadorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ing_software/veintiuno/JugadorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ing_software/veintiuno/JugadorTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,12 +162,37 @@
       <workItem from="1632570696596" duration="3340000" />
       <workItem from="1632696924377" duration="1018000" />
       <workItem from="1632750225139" duration="6970000" />
-      <workItem from="1632774556669" duration="1789000" />
+      <workItem from="1632774556669" duration="2158000" />
+      <workItem from="1632872020951" duration="358000" />
     </task>
+    <task id="LOCAL-00001" summary="Prueba métodos imprimir String">
+      <created>1632786930253</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1632786930253</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Prueba métodos imprimir String" />
+    <option name="LAST_COMMIT_MESSAGE" value="Prueba métodos imprimir String" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/MCIC_Java21$JugadorTest_testGetNombre.ic" NAME="JugadorTest.testGetNombre Coverage Results" MODIFIED="1632753371574" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
