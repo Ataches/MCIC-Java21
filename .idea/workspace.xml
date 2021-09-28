@@ -6,9 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="fb337225-0ac3-4743-9f1f-30e95324c398" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ing_software/veintiuno/Jugador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ing_software/veintiuno/Jugador.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ing_software/veintiuno/Veintiuno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ing_software/veintiuno/Veintiuno.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ing_software/veintiuno/Veintiuno.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ing_software/veintiuno/Veintiuno.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,10 +114,35 @@
       <workItem from="1632570474872" duration="214000" />
       <workItem from="1632570696596" duration="4208000" />
       <workItem from="1632793498964" duration="2510000" />
+      <workItem from="1632796344174" duration="237000" />
+      <workItem from="1632825914389" duration="2451000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
