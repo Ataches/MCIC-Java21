@@ -5,19 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fb337225-0ac3-4743-9f1f-30e95324c398" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cucumber/TestRunnerCasa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cucumber/stepDefinitionCasa/casaSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reporte/Reporte_de_prueba.html" beforeDir="false" afterPath="$PROJECT_DIR$/Reporte/Reporte_de_prueba.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ing_software/veintiuno/Jugador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ing_software/veintiuno/Jugador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/cucumber/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cucumber/TestRunnerJugador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/cucumber/stepDefinition/jugadorSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cucumber/stepDefinitionJugador/jugadorSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/casa.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/casa.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/jugador.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/jugador.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/cucumber/TestRunner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/cucumber/stepDefinition/jugadorSteps.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/casa.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/casa.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/jugador.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/jugador.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
