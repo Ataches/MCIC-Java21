@@ -23,7 +23,7 @@ IntelliJ IDEA
 
 - __Como__ jugador __quiero__ recibir todas las cartas que solicite a la casa siempre y cuando mi mano no supere 21 puntos, __para__ incrementar el valor de mi mano.
 
--	__Como__ jugador __quiero__ dejar de recibir cartas __para__ plantarme.
+- ~__Como__ jugador __quiero__ dejar de recibir cartas __para__ plantarme.~
 
 - __Como__ jugador __quiero__ tener una mano mayor al puntaje de la casa y menor a 21 puntos __para__ ganar el juego.
 
