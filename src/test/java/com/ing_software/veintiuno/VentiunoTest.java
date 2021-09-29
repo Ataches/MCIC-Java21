@@ -1,5 +1,6 @@
 package com.ing_software.veintiuno;
 
+import org.junit.Before;
 import org.junit.Test;
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
@@ -11,7 +12,14 @@ import static org.junit.Assert.assertNotEquals;
 public class VentiunoTest {
 
     Veintiuno _ventiunoObject= new Veintiuno();
+    private Carta carta;
 
+    @Before
+    public void setupTest3() throws Exception{
+
+        _ventiunoObject.generarMazo();
+        carta = new Carta("1", "A");
+    }
 
     @Test
     public void generarMazo() {
@@ -21,6 +29,11 @@ public class VentiunoTest {
     @Test
     public void generarMazo2() {
         assertNotEquals(104, _ventiunoObject.generarMazo().size());
+    }
+
+    @Test
+    public void sacarmazo() {
+        assertEquals(carta.getClass(), _ventiunoObject.sacarCartaMazo().getClass());
     }
 
     ///Solo es posible hacer prueba de nulidad ya que la lista de jugadores esta privada, por consiguiente no se cubrir
