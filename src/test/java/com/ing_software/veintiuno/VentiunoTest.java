@@ -39,14 +39,14 @@ public class VentiunoTest {
     ///Solo es posible hacer prueba de nulidad ya que la lista de jugadores esta privada, por consiguiente no se cubrir
     ///esa parte del código
     @Test
-    public void getJugadorTest(){
-        assertEquals(null, _ventiunoObject.getJugador("casa"));
-        assertEquals(null, _ventiunoObject.getJugador("jugador"));
-        assertEquals(null, _ventiunoObject.getJugador(null));
+    public void getJugadorFromObjectTest(){
+
+        Jugador _jugadorCasa= new Jugador("casa");
+        Jugador _jugadorJugador= new Jugador("jugador");
+        assertEquals("casa", _jugadorCasa.getNombre());
+        assertEquals("jugador", _jugadorJugador.getNombre());
+
     }
-
-
-
 
     @Test
     public void simulateGetJugadorTest() throws UnsupportedEncodingException {
@@ -55,11 +55,4 @@ public class VentiunoTest {
         assertEquals(null, _ventiunoObject.getJugador("casa"));
         System.setIn(new ByteArrayInputStream(_userAnswer.getBytes("UTF-8")));
     }
-
-    //ejemplo
-    @Test
-    public void sacarCartaMazo(){
-       System.out.println(_ventiunoObject.sacarCartaMazo());
-    }
-
 }
