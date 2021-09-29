@@ -17,6 +17,9 @@ public class  Jugador { // Jugador que tiene las cartas y a su vez metodos para 
     public int getPuntaje() {
       return puntaje;
     }
+    public void setPuntaje(int puntaje) {
+        this.puntaje = puntaje;
+    }
     
     public String getNombre() {
       return nombreJugador;

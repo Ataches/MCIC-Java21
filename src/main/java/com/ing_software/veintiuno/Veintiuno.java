@@ -5,7 +5,6 @@ import java.util.*;
 public class Veintiuno { // Clase principal que dirige el juego dependiendo de las decisiones del jugador
     public static final String[] pintas = {"Corazones", "Picas", "Diamante", "Trébol"};
     public static final String[] valores = {"As", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"};
-
     private List<Carta> mazo = new ArrayList<>();
     private final List<Jugador> jugadores = new ArrayList<>();
     private final Scanner sc = new Scanner(System.in);
@@ -71,7 +70,7 @@ public class Veintiuno { // Clase principal que dirige el juego dependiendo de l
         return mensaje;
     }
 
-    private boolean confirmar() { //Confirma si quiere mas cartas, sino solo juega la casa
+    public boolean confirmar() { //Confirma si quiere mas cartas, sino solo juega la casa
         System.out.println("\nJugador, quiere mas cartas? (Escriba 'No' para plantar su juego): ");
         String str = sc.nextLine();
         return !"no".equalsIgnoreCase(str);
@@ -125,6 +124,23 @@ public class Veintiuno { // Clase principal que dirige el juego dependiendo de l
             return getJugador(nombreJugador);
         }
     }
+
+    public List<Carta> getMazo() {
+        return mazo;
+    }
+
+    public void setMazo(List<Carta> mazo) {
+        this.mazo = mazo;
+    }
+
+    public boolean isJuegoContinua() {
+        return juegoContinua;
+    }
+
+    public void setJuegoContinua(boolean juegoContinua) {
+        this.juegoContinua = juegoContinua;
+    }
+
     // -  Arreglar cuando la casa se pasa
     // -  Revisar el if puntajeCasa linea 82
 }
