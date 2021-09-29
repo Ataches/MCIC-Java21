@@ -5,16 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fb337225-0ac3-4743-9f1f-30e95324c398" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_8_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_8_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_8_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_8_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_8_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_8_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ing_software/veintiuno/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ing_software/veintiuno/Launcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ing_software/veintiuno/Veintiuno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ing_software/veintiuno/Veintiuno.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/ing_software/veintiuno/VentiunoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ing_software/veintiuno/VentiunoTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,7 +50,7 @@
       <recent name="com.ing_software.veintiuno" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.VentiunoTest.simulateGetJugadorTest">
+  <component name="RunManager" selected="JUnit.VentiunoTest.sacarmazo">
     <configuration name="VentiunoTest.generarMazo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cuke-test.so" />
       <extension name="coverage">
@@ -108,7 +99,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VentiunoTest.sacarCartaMazo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="VentiunoTest.sacarmazo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cuke-test.so" />
       <extension name="coverage">
         <pattern>
@@ -118,7 +109,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.ing_software.veintiuno" />
       <option name="MAIN_CLASS_NAME" value="com.ing_software.veintiuno.VentiunoTest" />
-      <option name="METHOD_NAME" value="sacarCartaMazo" />
+      <option name="METHOD_NAME" value="sacarmazo" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -142,11 +133,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.VentiunoTest.sacarmazo" />
         <item itemvalue="JUnit.VentiunoTest.simulateGetJugadorTest" />
         <item itemvalue="JUnit.VentiunoTest.generarMazo" />
         <item itemvalue="JUnit.VentiunoTest.generarMazo2" />
         <item itemvalue="JUnit.VentiunoTest.getJugadorTest" />
-        <item itemvalue="JUnit.VentiunoTest.sacarCartaMazo" />
       </list>
     </recent_temporary>
   </component>
