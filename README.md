@@ -60,3 +60,9 @@ IntelliJ IDEA
 
 
 ## Pruebas de aceptación
+
+![image](https://user-images.githubusercontent.com/36229498/135331496-95b6504a-c239-4d39-a5a2-35f8f6dd7e44.png)
+
+Link: [Reporte de pruebas para jugador](https://github.com/Ataches/MCIC-Java21/blob/feat/AceptacionFinal/Reporte/Reporte_de_prueba_jugador.html)
+
+
