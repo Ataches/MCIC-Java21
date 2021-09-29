@@ -15,6 +15,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ing_software/veintiuno/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ing_software/veintiuno/Launcher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ing_software/veintiuno/Veintiuno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ing_software/veintiuno/Veintiuno.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ing_software/veintiuno/VentiunoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ing_software/veintiuno/VentiunoTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,21 +59,8 @@
       <recent name="com.ing_software.veintiuno" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.VentiunoTest.sacarCartaMazo">
-    <configuration name="Launcher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ing_software.veintiuno.Launcher" />
-      <module name="cuke-test.so" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ing_software.veintiuno.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="VentiunoTest.getJugador" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.VentiunoTest.simulateGetJugadorTest">
+    <configuration name="VentiunoTest.generarMazo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cuke-test.so" />
       <extension name="coverage">
         <pattern>
@@ -82,7 +70,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.ing_software.veintiuno" />
       <option name="MAIN_CLASS_NAME" value="com.ing_software.veintiuno.VentiunoTest" />
-      <option name="METHOD_NAME" value="getJugador" />
+      <option name="METHOD_NAME" value="generarMazo" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VentiunoTest.generarMazo2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cuke-test.so" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ing_software.veintiuno.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ing_software.veintiuno" />
+      <option name="MAIN_CLASS_NAME" value="com.ing_software.veintiuno.VentiunoTest" />
+      <option name="METHOD_NAME" value="generarMazo2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -138,11 +142,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.VentiunoTest.sacarCartaMazo" />
         <item itemvalue="JUnit.VentiunoTest.simulateGetJugadorTest" />
+        <item itemvalue="JUnit.VentiunoTest.generarMazo" />
+        <item itemvalue="JUnit.VentiunoTest.generarMazo2" />
         <item itemvalue="JUnit.VentiunoTest.getJugadorTest" />
-        <item itemvalue="JUnit.VentiunoTest.getJugador" />
-        <item itemvalue="Application.Launcher" />
+        <item itemvalue="JUnit.VentiunoTest.sacarCartaMazo" />
       </list>
     </recent_temporary>
   </component>
