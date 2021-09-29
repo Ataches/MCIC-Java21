@@ -6,7 +6,7 @@ public class Launcher { // Clase principal que ejecuta la clase veintiuno
     // Based on: https://mrtesteloper.com/2020/11/07/pruebas-bdd-con-selenium-java-y-cucumber/
     public static void main(String[] args) {
         Veintiuno veintiuno = new Veintiuno();
-        veintiuno.empezarJuego();
+        System.out.println(veintiuno.empezarJuego());
     }
 
 }
