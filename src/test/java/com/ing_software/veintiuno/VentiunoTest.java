@@ -64,13 +64,56 @@ public class VentiunoTest {
     @Test
     public void imprimirCartasTest() throws UnsupportedEncodingException {
         String mensaje = "";
-
         mensaje += "\nCartas casa: \n " + "--";
         mensaje += "\n\nCartas jugador: \n" + "--";
-        mensaje += "\nPuntaje jugador: " + "--";
+        mensaje += "\nPuntaje jugador: " + "0";
         assertEquals(mensaje,_ventiunoObject.imprimirCartas());
     }
 
+    @Test
+    public void imprimirCartasTest2() throws UnsupportedEncodingException {
+
+        Jugador _jugadorCasa= new Jugador("casa");
+        Jugador _jugadorJugador= new Jugador("jugador");
+        _jugadorCasa.addCarta(_ventiunoObject.sacarCartaMazo());
+        _jugadorCasa.addCarta(_ventiunoObject.sacarCartaMazo());
+        _jugadorCasa.addCarta(_ventiunoObject.sacarCartaMazo());
+        _jugadorCasa.sumarPuntos();
+
+        _jugadorJugador.addCarta(_ventiunoObject.sacarCartaMazo());
+        _jugadorJugador.addCarta(_ventiunoObject.sacarCartaMazo());
+        _jugadorJugador.addCarta(_ventiunoObject.sacarCartaMazo());
+        _jugadorJugador.sumarPuntos();
+        String mensaje = "";
+        mensaje += "\nCartas casa: \n " + "--";
+        mensaje += "\n\nCartas jugador: \n" + "--";
+        mensaje += "\nPuntaje jugador: " + "0";
+        assertEquals(mensaje,_ventiunoObject.imprimirCartas());
+    }
+
+
+    @Test
+    public void imprimirResultadoTest() throws UnsupportedEncodingException {
+
+        Jugador _jugadorCasa= new Jugador("casa");
+        Jugador _jugadorJugador= new Jugador("jugador");
+        _jugadorCasa.addCarta(_ventiunoObject.sacarCartaMazo());
+        //_jugadorCasa.addCarta(_ventiunoObject.sacarCartaMazo());
+        //_jugadorCasa.addCarta(_ventiunoObject.sacarCartaMazo());
+
+        _jugadorCasa.sumarPuntos();
+
+        _jugadorJugador.addCarta(_ventiunoObject.sacarCartaMazo());
+        _jugadorJugador.addCarta(_ventiunoObject.sacarCartaMazo());
+        _jugadorJugador.addCarta(_ventiunoObject.sacarCartaMazo());
+        _jugadorJugador.addCarta(_ventiunoObject.sacarCartaMazo());
+
+        _jugadorJugador.sumarPuntos();
+
+        assertEquals("Gano la casa",_ventiunoObject.imprimirResultado());
+    }
+
+   
     //@Test
     //public void confirmarTest() throws UnsupportedEncodingException {
     //    System.out.println( _ventiunoObject.confirmar());
