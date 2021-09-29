@@ -77,14 +77,15 @@ public class JugadorTest {
 	}
 
 	@Test
-	public void testSumarPuntosString4() {
-		Carta carta = new Carta("3", "Corazones");
-		Carta carta2 = new Carta("Q", "Picas");
+	public void testSumarPuntos2() {
+		Carta carta = new Carta("As", "Corazones");
+		Carta carta2 = new Carta("8", "Corazones");
+		Carta carta3 = new Carta("K", "Picas");
 		jugador.addCarta(carta);
 		jugador.addCarta(carta2);
-		jugador.sumarPuntos();
+		jugador.addCarta(carta3);
 		// cards added to player should be card type
-		assertEquals(1, jugador.sumarPuntos("As"));
+		assertEquals(19, jugador.sumarPuntos());
 	}
 
 	@Test
