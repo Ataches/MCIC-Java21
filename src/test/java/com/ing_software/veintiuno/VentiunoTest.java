@@ -48,11 +48,32 @@ public class VentiunoTest {
 
     }
 
+    @Before
+    public void setupTest4() throws Exception{
+        _ventiunoObject.generarMazo();
+    }
+
     @Test
     public void simulateGetJugadorTest() throws UnsupportedEncodingException {
-        String _userAnswer= "Si\n";
-        _ventiunoObject.empezarJuego();
-        assertEquals(null, _ventiunoObject.getJugador("casa"));
-        System.setIn(new ByteArrayInputStream(_userAnswer.getBytes("UTF-8")));
+
+        assertEquals(false,_ventiunoObject.jugar("casa"));
     }
+
+
+
+    @Test
+    public void imprimirCartasTest() throws UnsupportedEncodingException {
+        String mensaje = "";
+
+        mensaje += "\nCartas casa: \n " + "--";
+        mensaje += "\n\nCartas jugador: \n" + "--";
+        mensaje += "\nPuntaje jugador: " + "--";
+        assertEquals(mensaje,_ventiunoObject.imprimirCartas());
+    }
+
+    //@Test
+    //public void confirmarTest() throws UnsupportedEncodingException {
+    //    System.out.println( _ventiunoObject.confirmar());
+    //    assertEquals(false,_ventiunoObject.confirmar());
+    //}
 }

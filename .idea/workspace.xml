@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="fb337225-0ac3-4743-9f1f-30e95324c398" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ing_software/veintiuno/Jugador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ing_software/veintiuno/Jugador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ing_software/veintiuno/Veintiuno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ing_software/veintiuno/Veintiuno.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/ing_software/veintiuno/VentiunoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ing_software/veintiuno/VentiunoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/ing_software/veintiuno/VentiunoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ing_software/veintiuno/VentiunoTest.class" afterDir="false" />
     </list>
@@ -51,8 +53,8 @@
       <recent name="com.ing_software.veintiuno" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.VentiunoTest.getJugadorTest">
-    <configuration name="VentiunoTest.generarMazo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.VentiunoTest.imprimirCartasTest">
+    <configuration name="VentiunoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cuke-test.so" />
       <extension name="coverage">
         <pattern>
@@ -62,13 +64,12 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.ing_software.veintiuno" />
       <option name="MAIN_CLASS_NAME" value="com.ing_software.veintiuno.VentiunoTest" />
-      <option name="METHOD_NAME" value="generarMazo" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VentiunoTest.generarMazo2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="VentiunoTest.confirmarTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cuke-test.so" />
       <extension name="coverage">
         <pattern>
@@ -78,7 +79,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.ing_software.veintiuno" />
       <option name="MAIN_CLASS_NAME" value="com.ing_software.veintiuno.VentiunoTest" />
-      <option name="METHOD_NAME" value="generarMazo2" />
+      <option name="METHOD_NAME" value="confirmarTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -100,7 +101,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VentiunoTest.sacarmazo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="VentiunoTest.imprimirCartasTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cuke-test.so" />
       <extension name="coverage">
         <pattern>
@@ -110,7 +111,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.ing_software.veintiuno" />
       <option name="MAIN_CLASS_NAME" value="com.ing_software.veintiuno.VentiunoTest" />
-      <option name="METHOD_NAME" value="sacarmazo" />
+      <option name="METHOD_NAME" value="imprimirCartasTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -134,11 +135,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.VentiunoTest.getJugadorTest" />
-        <item itemvalue="JUnit.VentiunoTest.sacarmazo" />
+        <item itemvalue="JUnit.VentiunoTest.imprimirCartasTest" />
+        <item itemvalue="JUnit.VentiunoTest" />
         <item itemvalue="JUnit.VentiunoTest.simulateGetJugadorTest" />
-        <item itemvalue="JUnit.VentiunoTest.generarMazo" />
-        <item itemvalue="JUnit.VentiunoTest.generarMazo2" />
+        <item itemvalue="JUnit.VentiunoTest.confirmarTest" />
+        <item itemvalue="JUnit.VentiunoTest.getJugadorTest" />
       </list>
     </recent_temporary>
   </component>
@@ -197,6 +198,32 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fix: methods: get card from deck and get player" />
     <option name="LAST_COMMIT_MESSAGE" value="fix: methods: get card from deck and get player" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ing_software/veintiuno/Veintiuno.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ing_software/veintiuno/Veintiuno.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ing_software/veintiuno/Veintiuno.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ing_software/veintiuno/Veintiuno.java</url>
+          <line>70</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/MCIC_Java21$VentiunoTest_getJugadorTest.ic" NAME="VentiunoTest.getJugadorTest Coverage Results" MODIFIED="1632876527217" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

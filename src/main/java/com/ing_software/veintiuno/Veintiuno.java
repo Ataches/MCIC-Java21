@@ -71,7 +71,7 @@ public class Veintiuno { // Clase principal que dirige el juego dependiendo de l
         return mensaje;
     }
 
-    private boolean confirmar() { //Confirma si quiere mas cartas, sino solo juega la casa
+    public boolean confirmar() { //Confirma si quiere mas cartas, sino solo juega la casa
         System.out.println("\nJugador, quiere mas cartas? (Escriba 'No' para plantar su juego): ");
         String str = sc.nextLine();
         return !"no".equalsIgnoreCase(str);
