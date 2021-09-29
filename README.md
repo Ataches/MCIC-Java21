@@ -23,8 +23,6 @@ IntelliJ IDEA
 
 - :white_check_mark: __Como__ jugador __quiero__ recibir todas las cartas que solicite a la casa siempre y cuando mi mano no supere 21 puntos, __para__ incrementar el valor de mi mano.
 
-- :x: ~__Como__ jugador __quiero__ dejar de recibir cartas __para__ plantarme.~
-
 - :white_check_mark: __Como__ jugador __quiero__ tener una mano mayor al puntaje de la casa y menor a 21 puntos __para__ ganar el juego.
 
 ### Casa 
@@ -35,9 +33,7 @@ IntelliJ IDEA
 
 - :white_check_mark: __Como__ casa __quiero__ realizar el conteo para mi mano y la del jugador __para__ establecer el ganador y terminar la partida.
 
-- :x: __Como__ casa __quiero__ tener un puntaje igual o superior al obtenido por el jugador __para__ ganar el juego.
-
-- :x:	__Como__ casa __quiero__ conocer el resultado final del juego __para__ saber si gané o perdí.
+- :white_check_mark:	__Como__ casa __quiero__ conocer el resultado final del juego __para__ saber el ganador.
 
 
 ## Reglas
