@@ -30,7 +30,7 @@ public class Veintiuno { // Clase principal que dirige el juego dependiendo de l
         return imprimirResultado();
     }
 
-    private List<Carta> generarMazo() { // Genera el mazo a partir de las cartas que se contiene en el array y pintas
+    public List<Carta> generarMazo() { // Genera el mazo a partir de las cartas que se contiene en el array y pintas
         List<Carta> mazo = new ArrayList<>();
         for (String pinta : pintas) {
             for (String valor : valores) {
@@ -97,7 +97,7 @@ public class Veintiuno { // Clase principal que dirige el juego dependiendo de l
      * @return retorna la carta eliminada del mazo o una carta de error en caso de no
      * encontrar una carta dentro del mazo
      */
-    private Carta sacarCartaMazo() {
+    public Carta sacarCartaMazo() {
         try {
             return mazo.remove((int) (Math.random() * mazo.size()));
         }catch (IndexOutOfBoundsException ex){
@@ -114,7 +114,7 @@ public class Veintiuno { // Clase principal que dirige el juego dependiendo de l
      * @param nombreJugador string con el nombre del jugador
      * @return jugador encontrado o jugador creado y añadido al listado de jugadores
      */
-    private Jugador getJugador(String nombreJugador) {
+    public Jugador getJugador(String nombreJugador) {
         Optional<Jugador> optional = jugadores.stream().filter(
                 jugador -> nombreJugador.equals(jugador.getNombre()))
                 .findAny();
