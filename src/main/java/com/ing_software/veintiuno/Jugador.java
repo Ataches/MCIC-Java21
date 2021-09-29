@@ -31,16 +31,22 @@ public class  Jugador { // Jugador que tiene las cartas y a su vez metodos para 
     }
 
     public String imprimirCartas(boolean ocultarPrimera) {
-        if(ocultarPrimera){
-          return  "[(X, X)], " + jugadorCartas.subList(1, jugadorCartas.size())
-          .stream().map(Carta::cartaString)
-                  .collect(Collectors.joining(", "));
+        if(jugadorCartas.size()>0){
+            if(ocultarPrimera){
+                return  "[(X, X)], " + jugadorCartas.subList(1, jugadorCartas.size())
+                        .stream().map(Carta::cartaString)
+                        .collect(Collectors.joining(", "));
+            }
+            else{
+                return jugadorCartas
+                        .stream().map(Carta::cartaString)
+                        .collect(Collectors.joining(", "));
+            }
         }
         else{
-            return jugadorCartas
-            .stream().map(Carta::cartaString)
-                    .collect(Collectors.joining(", "));
-        }        
+            return "--";
+        }
+
     }
     
     public int sumarPuntos(){

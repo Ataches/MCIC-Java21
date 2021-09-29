@@ -39,27 +39,41 @@ public class VentiunoTest {
     ///Solo es posible hacer prueba de nulidad ya que la lista de jugadores esta privada, por consiguiente no se cubrir
     ///esa parte del código
     @Test
-    public void getJugadorTest(){
-        assertEquals(null, _ventiunoObject.getJugador("casa"));
-        assertEquals(null, _ventiunoObject.getJugador("jugador"));
-        assertEquals(null, _ventiunoObject.getJugador(null));
+    public void getJugadorFromObjectTest(){
+
+        Jugador _jugadorCasa= new Jugador("casa");
+        Jugador _jugadorJugador= new Jugador("jugador");
+        assertEquals("casa", _jugadorCasa.getNombre());
+        assertEquals("jugador", _jugadorJugador.getNombre());
+
     }
 
-
-
+    @Before
+    public void setupTest4() throws Exception{
+        _ventiunoObject.generarMazo();
+    }
 
     @Test
     public void simulateGetJugadorTest() throws UnsupportedEncodingException {
-        String _userAnswer= "Si\n";
-        _ventiunoObject.empezarJuego();
-        assertEquals(null, _ventiunoObject.getJugador("casa"));
-        System.setIn(new ByteArrayInputStream(_userAnswer.getBytes("UTF-8")));
+
+        assertEquals(false,_ventiunoObject.jugar("casa"));
     }
 
-    //ejemplo
+
+
     @Test
-    public void sacarCartaMazo(){
-       System.out.println(_ventiunoObject.sacarCartaMazo());
+    public void imprimirCartasTest() throws UnsupportedEncodingException {
+        String mensaje = "";
+
+        mensaje += "\nCartas casa: \n " + "--";
+        mensaje += "\n\nCartas jugador: \n" + "--";
+        mensaje += "\nPuntaje jugador: " + "--";
+        assertEquals(mensaje,_ventiunoObject.imprimirCartas());
     }
 
+    //@Test
+    //public void confirmarTest() throws UnsupportedEncodingException {
+    //    System.out.println( _ventiunoObject.confirmar());
+    //    assertEquals(false,_ventiunoObject.confirmar());
+    //}
 }
