@@ -1,13 +1,7 @@
 package com.cucumber.stepDefinitionCasa;
-
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.when;
-
 import com.ing_software.veintiuno.Carta;
-import com.ing_software.veintiuno.Jugador;
 import com.ing_software.veintiuno.Veintiuno;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;

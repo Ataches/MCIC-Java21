@@ -32,3 +32,4 @@ Feature: jugador juego 21
       | 20              | 19           | "Gano el jugador" |
       | 19              | 19           | "Gano la casa"    |
       | 22              | 24           | "Nadie gano"      |
+
