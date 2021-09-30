@@ -6,24 +6,32 @@ public class Veintiuno { // Clase principal que dirige el juego dependiendo de l
     public static final String[] pintas = {"Corazones", "Picas", "Diamante", "Trébol"};
     public static final String[] valores = {"As", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"};
 
-    private List<Carta> mazo = new ArrayList<>();
-    private final List<Jugador> jugadores = new ArrayList<>();
-    private final Scanner sc = new Scanner(System.in);
+    private final List<Carta> mazo;
+    private List<Jugador> jugadores;
     private boolean juegoContinua = true;
     private boolean finalizo = false;
+    private final GameAsker gameAsker;
 
-    private final Random random = new Random();
 
+    public Veintiuno(GameAsker gameAsker){
+        mazo = generarMazo();
+        this.gameAsker = gameAsker;
+    }
 
     public String empezarJuego() { // Metodo principal que dependiendo de la continuación o juego del jugador direcciona la partida
-        mazo = generarMazo();
         do {
-            juegoContinua = jugar("jugador");
-            if (juegoContinua) {
-                juegoContinua = jugar("casa");
-                System.out.println(imprimirCartas());
-                juegoContinua = confirmar();
+            for(Jugador jugador : jugadores) {
+                if (juegoContinua){
+                    if (!jugador.getNombre().equals("casa"))
+                        juegoContinua = jugar(jugador.getNombre());
+                    else
+                        if(!(jugador.sumarPuntos()==21))
+                            jugar(jugador.getNombre());
+                }else
+                    break;
             }
+            System.out.println(imprimirCartas());
+            juegoContinua = confirmar();
         } while (juegoContinua);
         finalizo = true;
         System.out.println(imprimirCartas());
@@ -73,7 +81,7 @@ public class Veintiuno { // Clase principal que dirige el juego dependiendo de l
 
     private boolean confirmar() { //Confirma si quiere mas cartas, sino solo juega la casa
         System.out.println("\nJugador, quiere mas cartas? (Escriba 'No' para plantar su juego): ");
-        String str = sc.nextLine();
+        String str = gameAsker.stringAsk();
         return !"no".equalsIgnoreCase(str);
     }
 
@@ -81,15 +89,15 @@ public class Veintiuno { // Clase principal que dirige el juego dependiendo de l
         int puntajeCasa = getJugador("casa").getPuntaje();
         int puntajeJugador = getJugador("jugador").getPuntaje();
 
-        if (puntajeCasa == puntajeJugador ||
-                puntajeCasa <= 21 && puntajeCasa > puntajeJugador ||
-                puntajeCasa <= 21 && puntajeJugador >= 21)
+        if ((puntajeCasa > 21) && (puntajeJugador > 21))
+            return "Nadie gano";
+        if ((puntajeCasa <= 21) &&
+                (puntajeCasa == puntajeJugador ||
+                puntajeCasa > puntajeJugador ||
+                puntajeJugador > 21))
             return "Gano la casa";
-        else {
-            if ((puntajeCasa > 21) && (puntajeJugador > 21))
-                return "Nadie gano";
+        else
             return "Gano el jugador";
-        }
     }
 
     /**
@@ -114,7 +122,7 @@ public class Veintiuno { // Clase principal que dirige el juego dependiendo de l
      * @param nombreJugador string con el nombre del jugador
      * @return jugador encontrado o jugador creado y añadido al listado de jugadores
      */
-    private Jugador getJugador(String nombreJugador) {
+    public Jugador getJugador(String nombreJugador) {
         Optional<Jugador> optional = jugadores.stream().filter(
                 jugador -> nombreJugador.equals(jugador.getNombre()))
                 .findAny();
@@ -125,6 +133,8 @@ public class Veintiuno { // Clase principal que dirige el juego dependiendo de l
             return getJugador(nombreJugador);
         }
     }
-    // -  Arreglar cuando la casa se pasa
-    // -  Revisar el if puntajeCasa linea 82
+
+    public void setJugadores(List<Jugador> jugadores){
+        this.jugadores = jugadores;
+    }
 }

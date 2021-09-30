@@ -4,15 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb337225-0ac3-4743-9f1f-30e95324c398" name="Default Changelist" comment="">
+    <list default="true" id="fb337225-0ac3-4743-9f1f-30e95324c398" name="Default Changelist" comment="fix: methods: get card from deck and get player">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_8_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_8_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_8_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_2_18_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_2_18_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ing_software/veintiuno/GameAsker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/ing_software/veintiuno/VeintiunoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cuke-test.so.iml" beforeDir="false" afterPath="$PROJECT_DIR$/cuke-test.so.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ing_software/veintiuno/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ing_software/veintiuno/Launcher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ing_software/veintiuno/Veintiuno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ing_software/veintiuno/Veintiuno.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ing_software/veintiuno/JugadorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ing_software/veintiuno/JugadorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ing_software/veintiuno/Launcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ing_software/veintiuno/Launcher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ing_software/veintiuno/Veintiuno.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ing_software/veintiuno/Veintiuno.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ing_software/veintiuno/JugadorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ing_software/veintiuno/JugadorTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -23,6 +41,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -40,17 +59,22 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/com/ing_software/veintiuno" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.jsOptions" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.ing_software.veintiuno" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Software\MCIC-Java21\src\test\java\com\ing_software\veintiuno" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.Launcher">
+  <component name="RunManager" selected="JUnit.VeintiunoTest">
     <configuration name="Launcher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ing_software.veintiuno.Launcher" />
       <module name="cuke-test.so" />
@@ -60,6 +84,17 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -95,11 +130,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="VeintiunoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cuke-test.so" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ing_software.veintiuno.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ing_software.veintiuno" />
+      <option name="MAIN_CLASS_NAME" value="com.ing_software.veintiuno.VeintiunoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VeintiunoTest.empezarJuego" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cuke-test.so" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ing_software.veintiuno.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ing_software.veintiuno" />
+      <option name="MAIN_CLASS_NAME" value="com.ing_software.veintiuno.VeintiunoTest" />
+      <option name="METHOD_NAME" value="empezarJuego" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.VeintiunoTest" />
+        <item itemvalue="JUnit.VeintiunoTest.empezarJuego" />
         <item itemvalue="Application.Launcher" />
-        <item itemvalue="JUnit.JugadorTest.test" />
         <item itemvalue="JUnit.JugadorTest" />
+        <item itemvalue="JUnit.JugadorTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -158,5 +226,37 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fix: methods: get card from deck and get player" />
     <option name="LAST_COMMIT_MESSAGE" value="fix: methods: get card from deck and get player" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/ing_software/veintiuno/VeintiunoTest.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/MCIC_Java21$VeintiunoTest_empezarJuego.ic" NAME="VeintiunoTest.empezarJuego Coverage Results" MODIFIED="1633023338699" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.ing_software.veintiuno.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/MCIC_Java21$VentiunoTest_getJugadorTest.ic" NAME="VentiunoTest.getJugadorTest Coverage Results" MODIFIED="1632876527217" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.ing_software.veintiuno.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/MCIC_Java21$JugadorTest_sumarPuntos.ic" NAME="JugadorTest.sumarPuntos Coverage Results" MODIFIED="1633018000154" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.ing_software.veintiuno.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/MCIC_Java21$JugadorTest.ic" NAME="JugadorTest Coverage Results" MODIFIED="1633018883530" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.ing_software.veintiuno.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/MCIC_Java21$VeintiunoTest.ic" NAME="VeintiunoTest Coverage Results" MODIFIED="1633030804096" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.ing_software.veintiuno.*</FILTER>
+    </SUITE>
   </component>
 </project>
