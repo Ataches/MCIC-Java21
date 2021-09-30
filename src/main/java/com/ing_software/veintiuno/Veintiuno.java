@@ -7,7 +7,7 @@ public class Veintiuno { // Clase principal que dirige el juego dependiendo de l
     public static final String[] valores = {"As", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"};
 
     private final List<Carta> mazo;
-    private List<Jugador> jugadores;
+    private List<Jugador> jugadores = new ArrayList<>();
     private boolean juegoContinua = true;
     private boolean finalizo = false;
     private final GameAsker gameAsker;
