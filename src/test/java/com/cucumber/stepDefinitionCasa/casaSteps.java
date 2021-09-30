@@ -23,7 +23,6 @@ public class casaSteps {
     public int puntaje;
     private GameAsker gameAsker;
     private Jugador casa;
-    private Jugador jugador;
     private Carta carta;
     private final List<Jugador> jugadores = new ArrayList<>();
 
@@ -81,7 +80,7 @@ public class casaSteps {
 
     @When("se suman las cartas: {string}")
     public void se_suman_las_cartas(String mano) {
-        jugador = veintiuno.getJugador("jugador");
+        Jugador jugador = veintiuno.getJugador("jugador");
         String[] valoresMano = mano.split(",");
         for (String valorCarta : valoresMano) {
             carta = new Carta(valorCarta, "Diamante");
