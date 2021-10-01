@@ -5,13 +5,14 @@ import org.junit.Test;
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
-
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 
 public class VentiunoTest {
 
-    Veintiuno _ventiunoObject= new Veintiuno();
+    private static GameAsker _gameAsker = new GameAsker(System.in);
+
+    Veintiuno _ventiunoObject= new Veintiuno(_gameAsker);
     private Carta carta;
 
     @Before
@@ -98,9 +99,6 @@ public class VentiunoTest {
         Jugador _jugadorCasa= new Jugador("casa");
         Jugador _jugadorJugador= new Jugador("jugador");
         _jugadorCasa.addCarta(_ventiunoObject.sacarCartaMazo());
-        //_jugadorCasa.addCarta(_ventiunoObject.sacarCartaMazo());
-        //_jugadorCasa.addCarta(_ventiunoObject.sacarCartaMazo());
-
         _jugadorCasa.sumarPuntos();
 
         _jugadorJugador.addCarta(_ventiunoObject.sacarCartaMazo());
@@ -114,9 +112,5 @@ public class VentiunoTest {
     }
 
    
-    //@Test
-    //public void confirmarTest() throws UnsupportedEncodingException {
-    //    System.out.println( _ventiunoObject.confirmar());
-    //    assertEquals(false,_ventiunoObject.confirmar());
-    //}
+
 }
