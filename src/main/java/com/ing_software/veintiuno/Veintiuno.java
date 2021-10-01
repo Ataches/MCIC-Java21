@@ -13,25 +13,24 @@ public class Veintiuno { // Clase principal que dirige el juego dependiendo de l
     private final GameAsker gameAsker;
 
 
-    public Veintiuno(GameAsker gameAsker){
+    public Veintiuno(GameAsker gameAsker) {
         mazo = generarMazo();
         this.gameAsker = gameAsker;
     }
 
     public String empezarJuego() { // Metodo principal que dependiendo de la continuación o juego del jugador direcciona la partida
         do {
-            for(Jugador jugador : jugadores) {
-                if (juegoContinua){
-                    if (!jugador.getNombre().equals("casa"))
-                        juegoContinua = jugar(jugador.getNombre());
-                    else
-                        if(!(jugador.sumarPuntos()==21))
-                            jugar(jugador.getNombre());
-                }else
-                    break;
+            for (Jugador jugador : jugadores) {
+                if (!jugador.getNombre().equals("casa")) {
+                    juegoContinua = jugar(jugador.getNombre());
+                    if (!juegoContinua)
+                        break;
+                } else if (!(jugador.sumarPuntos() == 21))
+                    jugar(jugador.getNombre());
             }
             System.out.println(imprimirCartas());
-            juegoContinua = confirmar();
+            if (juegoContinua)
+                juegoContinua = confirmar();
         } while (juegoContinua);
         finalizo = true;
         System.out.println(imprimirCartas());
@@ -59,7 +58,7 @@ public class Veintiuno { // Clase principal que dirige el juego dependiendo de l
                 jugador.addCarta(sacarCartaMazo());
             }
             return jugador.sumarPuntos() <= 21; //Si alguno de los jugadores paso los 21 termina el juego
-        }else {
+        } else {
             System.out.println("No quedan más cartas en el mazo");
             return false;
         }
@@ -93,8 +92,8 @@ public class Veintiuno { // Clase principal que dirige el juego dependiendo de l
             return "Nadie gano";
         if ((puntajeCasa <= 21) &&
                 (puntajeCasa == puntajeJugador ||
-                puntajeCasa > puntajeJugador ||
-                puntajeJugador > 21))
+                        puntajeCasa > puntajeJugador ||
+                        puntajeJugador > 21))
             return "Gano la casa";
         else
             return "Gano el jugador";
@@ -102,17 +101,18 @@ public class Veintiuno { // Clase principal que dirige el juego dependiendo de l
 
     /**
      * Genera una nueva carta según un numero aleatorio basado en el tamaño del mazo
+     *
      * @return retorna la carta eliminada del mazo o una carta de error en caso de no
      * encontrar una carta dentro del mazo
      */
     private Carta sacarCartaMazo() {
         try {
             return mazo.remove((int) (Math.random() * mazo.size()));
-        }catch (IndexOutOfBoundsException ex){
+        } catch (IndexOutOfBoundsException ex) {
             System.out.println(ex.getMessage());
             juegoContinua = false;
         }
-        return new Carta("-1","-1");
+        return new Carta("-1", "-1");
     }
 
     /**
@@ -134,7 +134,7 @@ public class Veintiuno { // Clase principal que dirige el juego dependiendo de l
         }
     }
 
-    public void setJugadores(List<Jugador> jugadores){
+    public void setJugadores(List<Jugador> jugadores) {
         this.jugadores = jugadores;
     }
 }

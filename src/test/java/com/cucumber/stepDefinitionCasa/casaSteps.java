@@ -24,7 +24,8 @@ public class casaSteps {
     private GameAsker gameAsker;
     private Jugador casa;
     private Carta carta;
-    private final List<Jugador> jugadores = new ArrayList<>();
+    private List<Jugador> jugadores = new ArrayList<>();
+    private Jugador jugador;
 
     @BeforeStep
     public void setup(){
@@ -78,6 +79,8 @@ public class casaSteps {
 
     //-----------------------------------------------------------------------------------------------
 
+    // prueba 3
+
     @When("se suman las cartas: {string}")
     public void se_suman_las_cartas(String mano) {
         Jugador jugador = veintiuno.getJugador("jugador");
@@ -94,4 +97,27 @@ public class casaSteps {
         assertEquals(puntaje,this.puntaje);
     }
 
+    // prueba 4
+
+    @When("se sabe el {int} y el {int}")
+    public void se_sabe_el_puntaje_jugador_y_el_puntaje_casa(int puntaje_jugador, int puntaje_casa) {
+        jugadores = new ArrayList<>();
+        casa = Mockito.mock(Jugador.class);
+        jugador = Mockito.mock(Jugador.class);
+        jugadores.add(casa);
+        jugadores.add(jugador);
+        veintiuno.setJugadores(jugadores);
+        when(jugador.getNombre()).thenReturn("jugador");
+        when(casa.getNombre()).thenReturn("casa");
+        when(jugador.getPuntaje()).thenReturn(puntaje_jugador);
+        when(casa.getPuntaje()).thenReturn(puntaje_casa);
+    }
+
+
+    @Then("se sabe el {string}")
+    public void se_sabe_el_ganador(String ganador) {
+
+        System.out.println(veintiuno.getJugador("jugador").getPuntaje());
+        assertEquals(veintiuno.imprimirResultado(),ganador);
+    }
 }

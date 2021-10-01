@@ -1,14 +1,13 @@
 package com.ing_software.veintiuno;
 
-import java.io.InputStream;
 import java.util.Scanner;
 
 public class GameAsker {
 
-    private final Scanner sc;
+    private Scanner sc;
 
-    public GameAsker(InputStream in){
-        sc = new Scanner(in);
+    public void setScanner(Scanner sc){
+        this.sc = sc;
     }
 
     public String stringAsk(){
