@@ -69,4 +69,12 @@ public class VeintiunoTest {
         veintiuno.jugar("player");
         assertEquals(3,player.getCartas().size());
     }
+
+    @Test
+    public void puntajeAses() {
+        jugador = new Jugador("jugador");
+        jugador.addCarta(new Carta("As", "Picas"));
+        jugador.addCarta(new Carta("As", "Corazones"));
+        assertEquals(12,jugador.sumarPuntos());
+    }
 }
