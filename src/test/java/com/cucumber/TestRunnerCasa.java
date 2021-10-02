@@ -5,7 +5,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)  
 @CucumberOptions(
-		plugin = {"pretty", "html:Reporte/Reporte_de_prueba_casa.html"},
+		plugin = {"pretty", "html:reports/Reporte_de_prueba_casa.html"},
 		features = {"classpath:features/casa.feature"},
 		glue = {"com.cucumber.stepDefinitionCasa"},
 		monochrome = true,

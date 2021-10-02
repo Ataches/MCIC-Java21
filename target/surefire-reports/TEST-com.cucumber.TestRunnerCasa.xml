@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="17" failures="1" name="com.cucumber.TestRunnerCasa" time="1.559" errors="0" skipped="0">
+  <properties>
+    <property name="idea.version" value="2021.1.2"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.vm.version" value="11.0.12+7-LTS"/>
+    <property name="sun.boot.library.path" value="C:\Users\Ataches\.jdks\corretto-11.0.12\bin"/>
+    <property name="maven.multiModuleProjectDirectory" value="D:\Software\MCIC-Java21"/>
+    <property name="java.vm.vendor" value="Amazon.com Inc."/>
+    <property name="java.vendor.url" value="https://aws.amazon.com/corretto/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="CO"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="D:\Software\MCIC-Java21"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="11.0.12+7-LTS"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\Ataches\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="maven.ext.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2021.1.2\plugins\maven\lib\maven-event-listener.jar"/>
+    <property name="classworlds.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA 2021.1.2\plugins\maven\lib\maven3\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Users\Ataches\.jdks\corretto-11.0.12\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Python39\Scripts\;C:\Python39\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\apache-maven-3.8.2\bin;C:\Users\Ataches\.jdks\corretto-11.0.12\bin;C:\Users\Ataches\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\Ataches\AppData\Local\Programs\Python\Python37\;C:\Users\Ataches\AppData\Local\Microsoft\WindowsApps;;C:\Users\Ataches\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Ataches\AppData\Roaming\npm;."/>
+    <property name="maven.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA 2021.1.2\plugins\maven\lib\maven3/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="55.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\Ataches"/>
+    <property name="user.timezone" value="America/Bogota"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="user.name" value="Ataches"/>
+    <property name="java.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2021.1.2\plugins\maven\lib\maven3\boot\plexus-classworlds-2.6.0.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2021.1.2\plugins\maven\lib\maven3\boot\plexus-classworlds.license"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2021.1.2 test"/>
+    <property name="java.home" value="C:\Users\Ataches\.jdks\corretto-11.0.12"/>
+    <property name="user.language" value="es"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="11.0.12"/>
+    <property name="java.vendor" value="Amazon.com Inc."/>
+    <property name="maven.home" value="C:\Program Files\JetBrains\IntelliJ IDEA 2021.1.2\plugins\maven\lib\maven3"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.version.date" value="2021-07-20"/>
+    <property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-11/issues/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.vendor.version" value="Corretto-11.0.12.7.1"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="casa juego 21" name="verificar que como casa me repartan dos cartas" time="1.06">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+	at com.cucumber.stepDefinitionCasa.casaSteps.la_casa_tiene_dos_cartas(casaSteps.java:56)
+	at ✽.la casa tiene dos cartas(classpath:features/casa.feature:7)
+</failure>
+    <system-out>
+Scenario: verificar que como casa me repartan dos cartas # features/casa.feature:4
+  Given la casa                                          # com.cucumber.stepDefinitionCasa.casaSteps.la_casa()
+
+Cartas casa: 
+ [(X, X)], [(J, Diamante)], [(J, Tr�bol)]
+
+Cartas jugador: 
+[(4, Tr�bol)], [(4, Diamante)], [(Q, Diamante)]
+Puntaje jugador: 18
+
+Jugador, quiere mas cartas? (Escriba &apos;No&apos; para plantar su juego): 
+
+*** Termino el juego ***
+Cartas casa: 
+[(5, Corazones)], [(J, Diamante)], [(J, Tr�bol)]
+Puntaje casa: 25
+
+Cartas jugador: 
+[(4, Tr�bol)], [(4, Diamante)], [(Q, Diamante)]
+Puntaje jugador: 18
+  When el juego inicia                                   # com.cucumber.stepDefinitionCasa.casaSteps.el_juego_inicia()
+  Then la casa tiene dos cartas                          # com.cucumber.stepDefinitionCasa.casaSteps.la_casa_tiene_dos_cartas()
+      java.lang.AssertionError
+	at com.cucumber.stepDefinitionCasa.casaSteps.la_casa_tiene_dos_cartas(casaSteps.java:56)
+	at ✽.la casa tiene dos cartas(classpath:features/casa.feature:7)
+
+</system-out>
+  </testcase>
+  <testcase classname="casa juego 21" name="verificar que la casa pueda recibir cartas siempre y cuando no se superen los 21 puntos y el jugador se haya plantado #1" time="0.04"/>
+  <testcase classname="casa juego 21" name="verificar que la casa pueda recibir cartas siempre y cuando no se superen los 21 puntos y el jugador se haya plantado #2" time="0.023"/>
+  <testcase classname="casa juego 21" name="verificar que la casa pueda recibir cartas siempre y cuando no se superen los 21 puntos y el jugador se haya plantado #3" time="0.018"/>
+  <testcase classname="casa juego 21" name="verificar que la casa pueda recibir cartas siempre y cuando no se superen los 21 puntos y el jugador se haya plantado #4" time="0.009"/>
+  <testcase classname="casa juego 21" name="verificar que la casa pueda recibir cartas siempre y cuando no se superen los 21 puntos y el jugador se haya plantado #5" time="0.033"/>
+  <testcase classname="casa juego 21" name="realizar el conteo de mis cartas #1" time="0.029"/>
+  <testcase classname="casa juego 21" name="realizar el conteo de mis cartas #2" time="0.028"/>
+  <testcase classname="casa juego 21" name="realizar el conteo de mis cartas #3" time="0.028"/>
+  <testcase classname="casa juego 21" name="realizar el conteo de mis cartas #4" time="0.029"/>
+  <testcase classname="casa juego 21" name="realizar el conteo de mis cartas #5" time="0.002"/>
+  <testcase classname="casa juego 21" name="realizar el conteo de mis cartas #6" time="0.028"/>
+  <testcase classname="casa juego 21" name="realizar el conteo de mis cartas #7" time="0.026"/>
+  <testcase classname="casa juego 21" name="Conocer el resultado final para saber el ganador #1" time="0.158"/>
+  <testcase classname="casa juego 21" name="Conocer el resultado final para saber el ganador #2" time="0.012"/>
+  <testcase classname="casa juego 21" name="Conocer el resultado final para saber el ganador #3" time="0.022"/>
+  <testcase classname="casa juego 21" name="Conocer el resultado final para saber el ganador #4" time="0.014"/>
+</testsuite>

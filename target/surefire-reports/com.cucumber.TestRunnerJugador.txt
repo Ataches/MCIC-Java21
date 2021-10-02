@@ -1,0 +1,69 @@
+-------------------------------------------------------------------------------
+Test set: com.cucumber.TestRunnerJugador
+-------------------------------------------------------------------------------
+Tests run: 11, Failures: 1, Errors: 6, Skipped: 0, Time elapsed: 0.394 sec <<< FAILURE!
+verificar que al jugador le repartan dos cartas(jugador juego 21)  Time elapsed: 0.025 sec  <<< FAILURE!
+java.lang.AssertionError
+	at com.cucumber.stepDefinitionJugador.jugadorSteps.el_jugador_tiene_dos_cartas(jugadorSteps.java:55)
+	at ✽.el jugador tiene dos cartas(classpath:features/jugador.feature:7)
+
+verificar que un jugador puede recibir cartas siempre y cuando no se superen los 21 puntos #1(jugador juego 21)  Time elapsed: 0.118 sec  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: The step "se reparte una carta : true" is undefined. You can implement it using the snippet(s) below:
+
+@Then("se reparte una carta : true")
+public void se_reparte_una_carta_true() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+verificar que un jugador puede recibir cartas siempre y cuando no se superen los 21 puntos #2(jugador juego 21)  Time elapsed: 0.012 sec  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: The step "se reparte una carta : false" is undefined. You can implement it using the snippet(s) below:
+
+@Then("se reparte una carta : false")
+public void se_reparte_una_carta_false() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+verificar que un jugador puede recibir cartas siempre y cuando no se superen los 21 puntos #3(jugador juego 21)  Time elapsed: 0.011 sec  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: The step "se reparte una carta : true" is undefined. You can implement it using the snippet(s) below:
+
+@Then("se reparte una carta : true")
+public void se_reparte_una_carta_true() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+verificar que un jugador puede recibir cartas siempre y cuando no se superen los 21 puntos #4(jugador juego 21)  Time elapsed: 0.069 sec  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: The step "se reparte una carta : false" is undefined. You can implement it using the snippet(s) below:
+
+@Then("se reparte una carta : false")
+public void se_reparte_una_carta_false() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+verificar que un jugador puede recibir cartas siempre y cuando no se superen los 21 puntos #5(jugador juego 21)  Time elapsed: 0.001 sec  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: The step "se reparte una carta : true" is undefined. You can implement it using the snippet(s) below:
+
+@Then("se reparte una carta : true")
+public void se_reparte_una_carta_true() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+verificar que un jugador puede recibir cartas siempre y cuando no se superen los 21 puntos #6(jugador juego 21)  Time elapsed: 0.021 sec  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: The step "se reparte una carta : false" is undefined. You can implement it using the snippet(s) below:
+
+@Then("se reparte una carta : false")
+public void se_reparte_una_carta_false() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+

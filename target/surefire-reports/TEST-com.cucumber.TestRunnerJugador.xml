@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="11" failures="1" name="com.cucumber.TestRunnerJugador" time="0.315" errors="6" skipped="0">
+  <properties>
+    <property name="idea.version" value="2021.1.2"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.vm.version" value="11.0.12+7-LTS"/>
+    <property name="sun.boot.library.path" value="C:\Users\Ataches\.jdks\corretto-11.0.12\bin"/>
+    <property name="maven.multiModuleProjectDirectory" value="D:\Software\MCIC-Java21"/>
+    <property name="java.vm.vendor" value="Amazon.com Inc."/>
+    <property name="java.vendor.url" value="https://aws.amazon.com/corretto/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="CO"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="D:\Software\MCIC-Java21"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="11.0.12+7-LTS"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\Ataches\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="maven.ext.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2021.1.2\plugins\maven\lib\maven-event-listener.jar"/>
+    <property name="classworlds.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA 2021.1.2\plugins\maven\lib\maven3\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Users\Ataches\.jdks\corretto-11.0.12\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Python39\Scripts\;C:\Python39\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\apache-maven-3.8.2\bin;C:\Users\Ataches\.jdks\corretto-11.0.12\bin;C:\Users\Ataches\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\Ataches\AppData\Local\Programs\Python\Python37\;C:\Users\Ataches\AppData\Local\Microsoft\WindowsApps;;C:\Users\Ataches\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Ataches\AppData\Roaming\npm;."/>
+    <property name="maven.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA 2021.1.2\plugins\maven\lib\maven3/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="55.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\Ataches"/>
+    <property name="user.timezone" value="America/Bogota"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="user.name" value="Ataches"/>
+    <property name="java.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2021.1.2\plugins\maven\lib\maven3\boot\plexus-classworlds-2.6.0.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2021.1.2\plugins\maven\lib\maven3\boot\plexus-classworlds.license"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2021.1.2 test"/>
+    <property name="java.home" value="C:\Users\Ataches\.jdks\corretto-11.0.12"/>
+    <property name="user.language" value="es"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="11.0.12"/>
+    <property name="java.vendor" value="Amazon.com Inc."/>
+    <property name="maven.home" value="C:\Program Files\JetBrains\IntelliJ IDEA 2021.1.2\plugins\maven\lib\maven3"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.version.date" value="2021-07-20"/>
+    <property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-11/issues/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.vendor.version" value="Corretto-11.0.12.7.1"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="jugador juego 21" name="verificar que al jugador le repartan dos cartas" time="0.025">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+	at com.cucumber.stepDefinitionJugador.jugadorSteps.el_jugador_tiene_dos_cartas(jugadorSteps.java:55)
+	at ✽.el jugador tiene dos cartas(classpath:features/jugador.feature:7)
+</failure>
+    <system-out>
+Scenario: verificar que al jugador le repartan dos cartas # features/jugador.feature:4
+  Given un jugador                                        # com.cucumber.stepDefinitionJugador.jugadorSteps.un_jugador()
+
+Cartas casa: 
+ [(X, X)], [(7, Diamante)], [(8, Diamante)]
+
+Cartas jugador: 
+[(6, Diamante)], [(K, Corazones)], [(3, Diamante)]
+Puntaje jugador: 19
+
+Jugador, quiere mas cartas? (Escriba &apos;No&apos; para plantar su juego): 
+
+*** Termino el juego ***
+Cartas casa: 
+[(K, Tr�bol)], [(7, Diamante)], [(8, Diamante)]
+Puntaje casa: 25
+
+Cartas jugador: 
+[(6, Diamante)], [(K, Corazones)], [(3, Diamante)]
+Puntaje jugador: 19
+  When inicia el juego                                    # com.cucumber.stepDefinitionJugador.jugadorSteps.el_juego_inicia()
+  Then el jugador tiene dos cartas                        # com.cucumber.stepDefinitionJugador.jugadorSteps.el_jugador_tiene_dos_cartas()
+      java.lang.AssertionError
+	at com.cucumber.stepDefinitionJugador.jugadorSteps.el_jugador_tiene_dos_cartas(jugadorSteps.java:55)
+	at ✽.el jugador tiene dos cartas(classpath:features/jugador.feature:7)
+
+</system-out>
+    <system-err>?????????????????????????????????????????????????????????????????????????????????????
+? Share your Cucumber Report with your team at https://reports.cucumber.io          ?
+? Activate publishing with one of the following:                                    ?
+?                                                                                   ?
+? src/test/resources/cucumber.properties:          cucumber.publish.enabled=true    ?
+? src/test/resources/junit-platform.properties:    cucumber.publish.enabled=true    ?
+? Environment variable:                            CUCUMBER_PUBLISH_ENABLED=true    ?
+? JUnit:                                           @CucumberOptions(publish = true) ?
+?                                                                                   ?
+? More information at https://reports.cucumber.io/docs/cucumber-jvm                 ?
+?                                                                                   ?
+? Disable this message with one of the following:                                   ?
+?                                                                                   ?
+? src/test/resources/cucumber.properties:          cucumber.publish.quiet=true      ?
+? src/test/resources/junit-platform.properties:    cucumber.publish.quiet=true      ?
+?????????????????????????????????????????????????????????????????????????????????????
+</system-err>
+  </testcase>
+  <testcase classname="jugador juego 21" name="verificar que un jugador puede recibir cartas siempre y cuando no se superen los 21 puntos #1" time="0.118">
+    <error message="The step &quot;se reparte una carta : true&quot; is undefined. You can implement it using the snippet(s) below:
+
+@Then(&quot;se reparte una carta : true&quot;)
+public void se_reparte_una_carta_true() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+" type="io.cucumber.junit.UndefinedStepException">io.cucumber.junit.UndefinedStepException: The step &quot;se reparte una carta : true&quot; is undefined. You can implement it using the snippet(s) below:
+
+@Then(&quot;se reparte una carta : true&quot;)
+public void se_reparte_una_carta_true() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+</error>
+    <system-out>
+Scenario Outline: verificar que un jugador puede recibir cartas siempre y cuando no se superen los 21 puntos # features/jugador.feature:17
+  Given un jugador                                                                                           # com.cucumber.stepDefinitionJugador.jugadorSteps.un_jugador()
+  When el jugador solicita una carta                                                                         # com.cucumber.stepDefinitionJugador.jugadorSteps.el_jugador_solicita_una_carta()
+  And se valida el 8                                                                                         # com.cucumber.stepDefinitionJugador.jugadorSteps.se_valida_el_puntaje(int)
+  Then se reparte una carta : true                                                                           # null
+</system-out>
+  </testcase>
+  <testcase classname="jugador juego 21" name="verificar que un jugador puede recibir cartas siempre y cuando no se superen los 21 puntos #2" time="0.012">
+    <error message="The step &quot;se reparte una carta : false&quot; is undefined. You can implement it using the snippet(s) below:
+
+@Then(&quot;se reparte una carta : false&quot;)
+public void se_reparte_una_carta_false() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+" type="io.cucumber.junit.UndefinedStepException">io.cucumber.junit.UndefinedStepException: The step &quot;se reparte una carta : false&quot; is undefined. You can implement it using the snippet(s) below:
+
+@Then(&quot;se reparte una carta : false&quot;)
+public void se_reparte_una_carta_false() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+</error>
+    <system-out>
+Scenario Outline: verificar que un jugador puede recibir cartas siempre y cuando no se superen los 21 puntos # features/jugador.feature:18
+  Given un jugador                                                                                           # com.cucumber.stepDefinitionJugador.jugadorSteps.un_jugador()
+  When el jugador solicita una carta                                                                         # com.cucumber.stepDefinitionJugador.jugadorSteps.el_jugador_solicita_una_carta()
+  And se valida el 23                                                                                        # com.cucumber.stepDefinitionJugador.jugadorSteps.se_valida_el_puntaje(int)
+  Then se reparte una carta : false                                                                          # null
+</system-out>
+  </testcase>
+  <testcase classname="jugador juego 21" name="verificar que un jugador puede recibir cartas siempre y cuando no se superen los 21 puntos #3" time="0.011">
+    <error message="The step &quot;se reparte una carta : true&quot; is undefined. You can implement it using the snippet(s) below:
+
+@Then(&quot;se reparte una carta : true&quot;)
+public void se_reparte_una_carta_true() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+" type="io.cucumber.junit.UndefinedStepException">io.cucumber.junit.UndefinedStepException: The step &quot;se reparte una carta : true&quot; is undefined. You can implement it using the snippet(s) below:
+
+@Then(&quot;se reparte una carta : true&quot;)
+public void se_reparte_una_carta_true() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+</error>
+    <system-out>
+Scenario Outline: verificar que un jugador puede recibir cartas siempre y cuando no se superen los 21 puntos # features/jugador.feature:19
+  Given un jugador                                                                                           # com.cucumber.stepDefinitionJugador.jugadorSteps.un_jugador()
+  When el jugador solicita una carta                                                                         # com.cucumber.stepDefinitionJugador.jugadorSteps.el_jugador_solicita_una_carta()
+  And se valida el 20                                                                                        # com.cucumber.stepDefinitionJugador.jugadorSteps.se_valida_el_puntaje(int)
+  Then se reparte una carta : true                                                                           # null
+</system-out>
+  </testcase>
+  <testcase classname="jugador juego 21" name="verificar que un jugador puede recibir cartas siempre y cuando no se superen los 21 puntos #4" time="0.069">
+    <error message="The step &quot;se reparte una carta : false&quot; is undefined. You can implement it using the snippet(s) below:
+
+@Then(&quot;se reparte una carta : false&quot;)
+public void se_reparte_una_carta_false() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+" type="io.cucumber.junit.UndefinedStepException">io.cucumber.junit.UndefinedStepException: The step &quot;se reparte una carta : false&quot; is undefined. You can implement it using the snippet(s) below:
+
+@Then(&quot;se reparte una carta : false&quot;)
+public void se_reparte_una_carta_false() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+</error>
+    <system-out>
+Scenario Outline: verificar que un jugador puede recibir cartas siempre y cuando no se superen los 21 puntos # features/jugador.feature:20
+  Given un jugador                                                                                           # com.cucumber.stepDefinitionJugador.jugadorSteps.un_jugador()
+  When el jugador solicita una carta                                                                         # com.cucumber.stepDefinitionJugador.jugadorSteps.el_jugador_solicita_una_carta()
+  And se valida el 26                                                                                        # com.cucumber.stepDefinitionJugador.jugadorSteps.se_valida_el_puntaje(int)
+  Then se reparte una carta : false                                                                          # null
+</system-out>
+  </testcase>
+  <testcase classname="jugador juego 21" name="verificar que un jugador puede recibir cartas siempre y cuando no se superen los 21 puntos #5" time="0.001">
+    <error message="The step &quot;se reparte una carta : true&quot; is undefined. You can implement it using the snippet(s) below:
+
+@Then(&quot;se reparte una carta : true&quot;)
+public void se_reparte_una_carta_true() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+" type="io.cucumber.junit.UndefinedStepException">io.cucumber.junit.UndefinedStepException: The step &quot;se reparte una carta : true&quot; is undefined. You can implement it using the snippet(s) below:
+
+@Then(&quot;se reparte una carta : true&quot;)
+public void se_reparte_una_carta_true() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+</error>
+    <system-out>
+Scenario Outline: verificar que un jugador puede recibir cartas siempre y cuando no se superen los 21 puntos # features/jugador.feature:21
+  Given un jugador                                                                                           # com.cucumber.stepDefinitionJugador.jugadorSteps.un_jugador()
+  When el jugador solicita una carta                                                                         # com.cucumber.stepDefinitionJugador.jugadorSteps.el_jugador_solicita_una_carta()
+  And se valida el 15                                                                                        # com.cucumber.stepDefinitionJugador.jugadorSteps.se_valida_el_puntaje(int)
+  Then se reparte una carta : true                                                                           # null
+</system-out>
+  </testcase>
+  <testcase classname="jugador juego 21" name="verificar que un jugador puede recibir cartas siempre y cuando no se superen los 21 puntos #6" time="0.021">
+    <error message="The step &quot;se reparte una carta : false&quot; is undefined. You can implement it using the snippet(s) below:
+
+@Then(&quot;se reparte una carta : false&quot;)
+public void se_reparte_una_carta_false() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+" type="io.cucumber.junit.UndefinedStepException">io.cucumber.junit.UndefinedStepException: The step &quot;se reparte una carta : false&quot; is undefined. You can implement it using the snippet(s) below:
+
+@Then(&quot;se reparte una carta : false&quot;)
+public void se_reparte_una_carta_false() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+</error>
+    <system-out>
+Scenario Outline: verificar que un jugador puede recibir cartas siempre y cuando no se superen los 21 puntos # features/jugador.feature:22
+  Given un jugador                                                                                           # com.cucumber.stepDefinitionJugador.jugadorSteps.un_jugador()
+  When el jugador solicita una carta                                                                         # com.cucumber.stepDefinitionJugador.jugadorSteps.el_jugador_solicita_una_carta()
+  And se valida el 22                                                                                        # com.cucumber.stepDefinitionJugador.jugadorSteps.se_valida_el_puntaje(int)
+  Then se reparte una carta : false                                                                          # null
+</system-out>
+  </testcase>
+  <testcase classname="jugador juego 21" name="Determinar el puntaje de los jugadores y definir el ganador #1" time="0.017"/>
+  <testcase classname="jugador juego 21" name="Determinar el puntaje de los jugadores y definir el ganador #2" time="0.014"/>
+  <testcase classname="jugador juego 21" name="Determinar el puntaje de los jugadores y definir el ganador #3" time="0.017"/>
+  <testcase classname="jugador juego 21" name="Determinar el puntaje de los jugadores y definir el ganador #4" time="0.01"/>
+</testsuite>

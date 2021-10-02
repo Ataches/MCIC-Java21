@@ -2,7 +2,10 @@ package com.ing_software.veintiuno;
 
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.mockito.Mockito;
+import org.mockito.MockitoAnnotations;
+import org.mockito.junit.MockitoJUnitRunner;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,6 +13,7 @@ import java.util.List;
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.when;
 
+@RunWith(MockitoJUnitRunner.class)
 public class VeintiunoTest {
 
     private Veintiuno veintiuno;
@@ -19,6 +23,7 @@ public class VeintiunoTest {
 
     @Before
     public void setup() {
+        MockitoAnnotations.initMocks(this);
         GameAsker gameAsker = Mockito.mock(GameAsker.class);
         veintiuno = new Veintiuno(gameAsker);
         veintiuno.setJugadores(jugadores);

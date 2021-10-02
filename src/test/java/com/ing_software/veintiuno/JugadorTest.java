@@ -2,14 +2,22 @@ package com.ing_software.veintiuno;
 
 import static org.junit.Assert.assertEquals;
 
+import io.cucumber.junit.CucumberOptions;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.mockito.MockitoAnnotations;
+import org.mockito.junit.MockitoJUnitRunner;
 
+import javax.annotation.processing.SupportedOptions;
+
+@RunWith(MockitoJUnitRunner.class)
 public class JugadorTest {
 	private Jugador jugador;
 
 	@Before
 	public void setup() {
+		MockitoAnnotations.initMocks(this);
 		jugador = new Jugador("jugador");
 		jugador.addCarta(new Carta("3", "Corazones"));
 		jugador.addCarta(new Carta("J", "Picas"));

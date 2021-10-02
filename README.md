@@ -57,7 +57,27 @@ IntelliJ IDEA
 
 ## Pruebas unitarias
 
+### Cobertura total del código:
 
+![](reports/.img/coverage_total.jpg)
+
+### Carta.java
+
+![](reports/.img/coverage_carta.jpg)
+
+### Ventiuno.java
+
+![](reports/.img/coverage_veintiuno.jpg)
+
+### Jugador.java 
+
+![](reports/.img/coverage_jugador_1.jpg)
+![](reports/.img/coverage_jugador_2.jpg)
+
+
+### GameAsker.java
+
+![](reports/.img/coverage_game_asker.jpg)
 
 ## Pruebas de aceptación
 

@@ -5,7 +5,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)  
 @CucumberOptions(
-		plugin = {"pretty", "html:Reporte/Reporte_de_prueba_jugador.html"},
+		plugin = {"pretty", "html:reports/Reporte_de_prueba_jugador.html"},
 		features = {"classpath:features/jugador.feature"},
 		glue = {"com.cucumber.stepDefinitionJugador"},
 		monochrome = true,

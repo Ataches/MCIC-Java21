@@ -2,17 +2,23 @@ package com.ing_software.veintiuno;
 
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.mockito.MockitoAnnotations;
+import org.mockito.junit.MockitoJUnitRunner;
 
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 import java.util.Scanner;
 
 import static org.junit.Assert.assertEquals;
+
+@RunWith(MockitoJUnitRunner.class)
 public class GameAskerTest {
 	private GameAsker gameAsker;
 
 	@Before
 	public void setup() {
+		MockitoAnnotations.initMocks(this);
 		gameAsker = new GameAsker();
 
 		String data = "no";

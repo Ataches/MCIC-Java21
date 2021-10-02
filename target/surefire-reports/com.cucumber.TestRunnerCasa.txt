@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: com.cucumber.TestRunnerCasa
+-------------------------------------------------------------------------------
+Tests run: 17, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 2.487 sec <<< FAILURE!
+verificar que como casa me repartan dos cartas(casa juego 21)  Time elapsed: 1.06 sec  <<< FAILURE!
+java.lang.AssertionError
+	at com.cucumber.stepDefinitionCasa.casaSteps.la_casa_tiene_dos_cartas(casaSteps.java:56)
+	at ✽.la casa tiene dos cartas(classpath:features/casa.feature:7)
+
