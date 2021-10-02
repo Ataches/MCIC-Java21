@@ -61,6 +61,12 @@ IntelliJ IDEA
 
 ## Pruebas unitarias
 
+### Jugador.java
 
+![image](https://firebasestorage.googleapis.com/v0/b/udemy-firebase-56415.appspot.com/o/Junit%20Test%20Jugador.PNG?alt=media&token=7c67c238-3e69-42ed-bc92-936180dfe544)
+
+### Ventiuno.java
+
+![image](https://firebasestorage.googleapis.com/v0/b/dinny-chat-develop.appspot.com/o/Captura%20de%20Pantalla%202021-10-01%20a%20la(s)%209.17.25%20p.%C2%A0m..png?alt=media&token=0cb3c68c-36c5-441c-abe4-fb4c2acdd29e)
 
 ## Pruebas de aceptación
