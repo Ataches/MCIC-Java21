@@ -58,10 +58,10 @@ Current scope:     <a href="../../index.html">all classes</a>
 </td>
 <td class="coverageStat">
   <span class="percent">
-    83,3%
+    98,5%
   </span>
   <span class="absValue">
-    (60/72)
+    (64/65)
   </span>
 </td>
 </tr>
@@ -125,94 +125,83 @@ Current scope:     <a href="../../index.html">all classes</a>
 <i class="no-highlight">50</i>&nbsp;
 <i class="no-highlight">51</i>&nbsp;    public boolean jugar(String nombreJugador) {
 <b class="fc"><i class="no-highlight">52</i>&nbsp;        Jugador jugador = getJugador(nombreJugador);</b>
-<b class="fc"><i class="no-highlight">53</i>&nbsp;        if (!mazo.isEmpty()) {</b>
-<b class="fc"><i class="no-highlight">54</i>&nbsp;            if (jugador.getCartas().isEmpty()) {//Inicia mazo</b>
-<b class="fc"><i class="no-highlight">55</i>&nbsp;                jugador.addCarta(sacarCartaMazo());</b>
-<b class="fc"><i class="no-highlight">56</i>&nbsp;                jugador.addCarta(sacarCartaMazo());</b>
-<i class="no-highlight">57</i>&nbsp;            } else {
-<b class="nc"><i class="no-highlight">58</i>&nbsp;                jugador.addCarta(sacarCartaMazo());</b>
-<i class="no-highlight">59</i>&nbsp;            }
-<b class="fc"><i class="no-highlight">60</i>&nbsp;            return jugador.sumarPuntos() &lt;= 21; //Si alguno de los jugadores paso los 21 termina el juego</b>
-<i class="no-highlight">61</i>&nbsp;        } else {
-<b class="nc"><i class="no-highlight">62</i>&nbsp;            System.out.println(&quot;No quedan más cartas en el mazo&quot;);</b>
-<b class="nc"><i class="no-highlight">63</i>&nbsp;            return false;</b>
-<i class="no-highlight">64</i>&nbsp;        }
-<i class="no-highlight">65</i>&nbsp;    }
-<i class="no-highlight">66</i>&nbsp;
-<i class="no-highlight">67</i>&nbsp;    public String imprimirCartas() { //Impresiones por pantalla
-<b class="fc"><i class="no-highlight">68</i>&nbsp;        String mensaje = &quot;&quot;;</b>
-<b class="fc"><i class="no-highlight">69</i>&nbsp;        if (!finalizo) {</b>
-<b class="fc"><i class="no-highlight">70</i>&nbsp;            mensaje += &quot;\nCartas casa: \n &quot; + getJugador(&quot;casa&quot;).imprimirCartas(true);</b>
-<i class="no-highlight">71</i>&nbsp;        } else {
-<b class="fc"><i class="no-highlight">72</i>&nbsp;            mensaje += &quot;\n*** Termino el juego ***&quot;;</b>
-<b class="fc"><i class="no-highlight">73</i>&nbsp;            mensaje += &quot;\nCartas casa: \n&quot; + getJugador(&quot;casa&quot;).imprimirCartas(false);</b>
-<b class="fc"><i class="no-highlight">74</i>&nbsp;            mensaje += &quot;\nPuntaje casa: &quot; + getJugador(&quot;casa&quot;).getPuntaje();</b>
-<i class="no-highlight">75</i>&nbsp;        }
-<b class="fc"><i class="no-highlight">76</i>&nbsp;        mensaje += &quot;\n\nCartas jugador: \n&quot; + getJugador(&quot;jugador&quot;).imprimirCartas(false);</b>
-<b class="fc"><i class="no-highlight">77</i>&nbsp;        mensaje += &quot;\nPuntaje jugador: &quot; + getJugador(&quot;jugador&quot;).getPuntaje();</b>
-<b class="fc"><i class="no-highlight">78</i>&nbsp;        return mensaje;</b>
-<i class="no-highlight">79</i>&nbsp;    }
-<i class="no-highlight">80</i>&nbsp;
-<i class="no-highlight">81</i>&nbsp;    private boolean confirmar() { //Confirma si quiere mas cartas, sino solo juega la casa
-<b class="fc"><i class="no-highlight">82</i>&nbsp;        System.out.println(&quot;\nJugador, quiere mas cartas? (Escriba &#39;No&#39; para plantar su juego): &quot;);</b>
-<b class="fc"><i class="no-highlight">83</i>&nbsp;        String str = gameAsker.stringAsk();</b>
-<b class="fc"><i class="no-highlight">84</i>&nbsp;        return !&quot;no&quot;.equalsIgnoreCase(str);</b>
-<i class="no-highlight">85</i>&nbsp;    }
-<i class="no-highlight">86</i>&nbsp;
-<i class="no-highlight">87</i>&nbsp;    public String imprimirResultado() { //RESULTADOS: Analiza el puntaje de cada jugador e imprime el resultado
-<b class="fc"><i class="no-highlight">88</i>&nbsp;        int puntajeCasa = getJugador(&quot;casa&quot;).getPuntaje();</b>
-<b class="fc"><i class="no-highlight">89</i>&nbsp;        int puntajeJugador = getJugador(&quot;jugador&quot;).getPuntaje();</b>
-<i class="no-highlight">90</i>&nbsp;
-<b class="fc"><i class="no-highlight">91</i>&nbsp;        if ((puntajeCasa &gt; 21) &amp;&amp; (puntajeJugador &gt; 21))</b>
-<b class="nc"><i class="no-highlight">92</i>&nbsp;            return &quot;Nadie gano&quot;;</b>
-<b class="fc"><i class="no-highlight">93</i>&nbsp;        if ((puntajeCasa &lt;= 21) &amp;&amp;</b>
-<i class="no-highlight">94</i>&nbsp;                (puntajeCasa == puntajeJugador ||
-<i class="no-highlight">95</i>&nbsp;                        puntajeCasa &gt; puntajeJugador ||
-<i class="no-highlight">96</i>&nbsp;                        puntajeJugador &gt; 21))
-<b class="fc"><i class="no-highlight">97</i>&nbsp;            return &quot;Gano la casa&quot;;</b>
-<i class="no-highlight">98</i>&nbsp;        else
-<b class="nc"><i class="no-highlight">99</i>&nbsp;            return &quot;Gano el jugador&quot;;</b>
-<i class="no-highlight">100</i>&nbsp;    }
-<i class="no-highlight">101</i>&nbsp;
-<i class="no-highlight">102</i>&nbsp;    /**
-<i class="no-highlight">103</i>&nbsp;     * Genera una nueva carta según un numero aleatorio basado en el tamaño del mazo
-<i class="no-highlight">104</i>&nbsp;     *
-<i class="no-highlight">105</i>&nbsp;     * @return retorna la carta eliminada del mazo o una carta de error en caso de no
-<i class="no-highlight">106</i>&nbsp;     * encontrar una carta dentro del mazo
-<i class="no-highlight">107</i>&nbsp;     */
-<i class="no-highlight">108</i>&nbsp;    private Carta sacarCartaMazo() {
-<i class="no-highlight">109</i>&nbsp;        try {
-<b class="fc"><i class="no-highlight">110</i>&nbsp;            return mazo.remove((int) (Math.random() * mazo.size()));</b>
-<b class="nc"><i class="no-highlight">111</i>&nbsp;        } catch (IndexOutOfBoundsException ex) {</b>
-<b class="nc"><i class="no-highlight">112</i>&nbsp;            System.out.println(ex.getMessage());</b>
-<b class="nc"><i class="no-highlight">113</i>&nbsp;            juegoContinua = false;</b>
-<i class="no-highlight">114</i>&nbsp;        }
-<b class="nc"><i class="no-highlight">115</i>&nbsp;        return new Carta(&quot;-1&quot;, &quot;-1&quot;);</b>
-<i class="no-highlight">116</i>&nbsp;    }
-<i class="no-highlight">117</i>&nbsp;
-<i class="no-highlight">118</i>&nbsp;    /**
-<i class="no-highlight">119</i>&nbsp;     * Obtiene un jugador presente en el listado jugadores, en caso contrario crea
-<i class="no-highlight">120</i>&nbsp;     * uno nuevo utilizando el nombre recibido.
-<i class="no-highlight">121</i>&nbsp;     *
-<i class="no-highlight">122</i>&nbsp;     * @param nombreJugador string con el nombre del jugador
-<i class="no-highlight">123</i>&nbsp;     * @return jugador encontrado o jugador creado y añadido al listado de jugadores
-<i class="no-highlight">124</i>&nbsp;     */
-<i class="no-highlight">125</i>&nbsp;    public Jugador getJugador(String nombreJugador) {
-<b class="fc"><i class="no-highlight">126</i>&nbsp;        Optional&lt;Jugador&gt; optional = jugadores.stream().filter(</b>
-<b class="fc"><i class="no-highlight">127</i>&nbsp;                jugador -&gt; nombreJugador.equals(jugador.getNombre()))</b>
-<b class="fc"><i class="no-highlight">128</i>&nbsp;                .findAny();</b>
-<b class="fc"><i class="no-highlight">129</i>&nbsp;        if (optional.isPresent())</b>
-<b class="fc"><i class="no-highlight">130</i>&nbsp;            return optional.get();</b>
-<i class="no-highlight">131</i>&nbsp;        else {
-<b class="nc"><i class="no-highlight">132</i>&nbsp;            jugadores.add(new Jugador(nombreJugador));</b>
-<b class="nc"><i class="no-highlight">133</i>&nbsp;            return getJugador(nombreJugador);</b>
-<i class="no-highlight">134</i>&nbsp;        }
-<i class="no-highlight">135</i>&nbsp;    }
-<i class="no-highlight">136</i>&nbsp;
-<i class="no-highlight">137</i>&nbsp;    public void setJugadores(List&lt;Jugador&gt; jugadores) {
-<b class="fc"><i class="no-highlight">138</i>&nbsp;        this.jugadores = jugadores;</b>
-<b class="fc"><i class="no-highlight">139</i>&nbsp;    }</b>
-<i class="no-highlight">140</i>&nbsp;}
+<b class="fc"><i class="no-highlight">53</i>&nbsp;        if (jugador.getCartas().isEmpty()) {//Inicia mazo</b>
+<b class="fc"><i class="no-highlight">54</i>&nbsp;            jugador.addCarta(sacarCartaMazo());</b>
+<b class="fc"><i class="no-highlight">55</i>&nbsp;            jugador.addCarta(sacarCartaMazo());</b>
+<i class="no-highlight">56</i>&nbsp;        } else {
+<b class="fc"><i class="no-highlight">57</i>&nbsp;            jugador.addCarta(sacarCartaMazo());</b>
+<i class="no-highlight">58</i>&nbsp;        }
+<b class="fc"><i class="no-highlight">59</i>&nbsp;        return jugador.sumarPuntos() &lt;= 21; //Si alguno de los jugadores paso los 21 termina el juego</b>
+<i class="no-highlight">60</i>&nbsp;    }
+<i class="no-highlight">61</i>&nbsp;
+<i class="no-highlight">62</i>&nbsp;    public String imprimirCartas() { //Impresiones por pantalla
+<b class="fc"><i class="no-highlight">63</i>&nbsp;        String mensaje = &quot;&quot;;</b>
+<b class="fc"><i class="no-highlight">64</i>&nbsp;        if (!finalizo) {</b>
+<b class="fc"><i class="no-highlight">65</i>&nbsp;            mensaje += &quot;\nCartas casa: \n &quot; + getJugador(&quot;casa&quot;).imprimirCartas(true);</b>
+<i class="no-highlight">66</i>&nbsp;        } else {
+<b class="fc"><i class="no-highlight">67</i>&nbsp;            mensaje += &quot;\n*** Termino el juego ***&quot;;</b>
+<b class="fc"><i class="no-highlight">68</i>&nbsp;            mensaje += &quot;\nCartas casa: \n&quot; + getJugador(&quot;casa&quot;).imprimirCartas(false);</b>
+<b class="fc"><i class="no-highlight">69</i>&nbsp;            mensaje += &quot;\nPuntaje casa: &quot; + getJugador(&quot;casa&quot;).getPuntaje();</b>
+<i class="no-highlight">70</i>&nbsp;        }
+<b class="fc"><i class="no-highlight">71</i>&nbsp;        mensaje += &quot;\n\nCartas jugador: \n&quot; + getJugador(&quot;jugador&quot;).imprimirCartas(false);</b>
+<b class="fc"><i class="no-highlight">72</i>&nbsp;        mensaje += &quot;\nPuntaje jugador: &quot; + getJugador(&quot;jugador&quot;).getPuntaje();</b>
+<b class="fc"><i class="no-highlight">73</i>&nbsp;        return mensaje;</b>
+<i class="no-highlight">74</i>&nbsp;    }
+<i class="no-highlight">75</i>&nbsp;
+<i class="no-highlight">76</i>&nbsp;    private boolean confirmar() { //Confirma si quiere mas cartas, sino solo juega la casa
+<b class="fc"><i class="no-highlight">77</i>&nbsp;        System.out.println(&quot;\nJugador, quiere mas cartas? (Escriba &#39;No&#39; para plantar su juego): &quot;);</b>
+<b class="fc"><i class="no-highlight">78</i>&nbsp;        String str = gameAsker.stringAsk();</b>
+<b class="fc"><i class="no-highlight">79</i>&nbsp;        return !&quot;no&quot;.equalsIgnoreCase(str);</b>
+<i class="no-highlight">80</i>&nbsp;    }
+<i class="no-highlight">81</i>&nbsp;
+<i class="no-highlight">82</i>&nbsp;    public String imprimirResultado() { //RESULTADOS: Analiza el puntaje de cada jugador e imprime el resultado
+<b class="fc"><i class="no-highlight">83</i>&nbsp;        int puntajeCasa = getJugador(&quot;casa&quot;).getPuntaje();</b>
+<b class="fc"><i class="no-highlight">84</i>&nbsp;        int puntajeJugador = getJugador(&quot;jugador&quot;).getPuntaje();</b>
+<i class="no-highlight">85</i>&nbsp;
+<b class="fc"><i class="no-highlight">86</i>&nbsp;        if ((puntajeCasa &gt; 21) &amp;&amp; (puntajeJugador &gt; 21))</b>
+<b class="fc"><i class="no-highlight">87</i>&nbsp;            return &quot;Nadie gano&quot;;</b>
+<b class="fc"><i class="no-highlight">88</i>&nbsp;        if ((puntajeCasa &lt;= 21) &amp;&amp;</b>
+<i class="no-highlight">89</i>&nbsp;                (puntajeCasa == puntajeJugador ||
+<i class="no-highlight">90</i>&nbsp;                        puntajeCasa &gt; puntajeJugador ||
+<i class="no-highlight">91</i>&nbsp;                        puntajeJugador &gt; 21))
+<b class="fc"><i class="no-highlight">92</i>&nbsp;            return &quot;Gano la casa&quot;;</b>
+<i class="no-highlight">93</i>&nbsp;        else
+<b class="fc"><i class="no-highlight">94</i>&nbsp;            return &quot;Gano el jugador&quot;;</b>
+<i class="no-highlight">95</i>&nbsp;    }
+<i class="no-highlight">96</i>&nbsp;
+<i class="no-highlight">97</i>&nbsp;    /**
+<i class="no-highlight">98</i>&nbsp;     * Genera una nueva carta según un numero aleatorio basado en el tamaño del mazo
+<i class="no-highlight">99</i>&nbsp;     *
+<i class="no-highlight">100</i>&nbsp;     * @return retorna la carta eliminada del mazo o una carta de error en caso de no
+<i class="no-highlight">101</i>&nbsp;     * encontrar una carta dentro del mazo
+<i class="no-highlight">102</i>&nbsp;     */
+<i class="no-highlight">103</i>&nbsp;    private Carta sacarCartaMazo() {
+<b class="fc"><i class="no-highlight">104</i>&nbsp;        return mazo.remove((int) (Math.random() * mazo.size()));</b>
+<i class="no-highlight">105</i>&nbsp;    }
+<i class="no-highlight">106</i>&nbsp;
+<i class="no-highlight">107</i>&nbsp;    /**
+<i class="no-highlight">108</i>&nbsp;     * Obtiene un jugador presente en el listado jugadores, en caso contrario crea
+<i class="no-highlight">109</i>&nbsp;     * uno nuevo utilizando el nombre recibido.
+<i class="no-highlight">110</i>&nbsp;     *
+<i class="no-highlight">111</i>&nbsp;     * @param nombreJugador string con el nombre del jugador
+<i class="no-highlight">112</i>&nbsp;     * @return jugador encontrado o jugador creado y añadido al listado de jugadores
+<i class="no-highlight">113</i>&nbsp;     */
+<i class="no-highlight">114</i>&nbsp;    public Jugador getJugador(String nombreJugador) {
+<b class="fc"><i class="no-highlight">115</i>&nbsp;        Optional&lt;Jugador&gt; optional = jugadores.stream().filter(</b>
+<b class="fc"><i class="no-highlight">116</i>&nbsp;                jugador -&gt; nombreJugador.equals(jugador.getNombre()))</b>
+<b class="fc"><i class="no-highlight">117</i>&nbsp;                .findAny();</b>
+<b class="fc"><i class="no-highlight">118</i>&nbsp;        if (optional.isPresent())</b>
+<b class="fc"><i class="no-highlight">119</i>&nbsp;            return optional.get();</b>
+<i class="no-highlight">120</i>&nbsp;        else {
+<b class="fc"><i class="no-highlight">121</i>&nbsp;            jugadores.add(new Jugador(nombreJugador));</b>
+<b class="fc"><i class="no-highlight">122</i>&nbsp;            return getJugador(nombreJugador);</b>
+<i class="no-highlight">123</i>&nbsp;        }
+<i class="no-highlight">124</i>&nbsp;    }
+<i class="no-highlight">125</i>&nbsp;
+<i class="no-highlight">126</i>&nbsp;    public void setJugadores(List&lt;Jugador&gt; jugadores) {
+<b class="fc"><i class="no-highlight">127</i>&nbsp;        this.jugadores = jugadores;</b>
+<b class="fc"><i class="no-highlight">128</i>&nbsp;    }</b>
+<i class="no-highlight">129</i>&nbsp;}
 </div>
 </pre>
 </div>
@@ -239,7 +228,7 @@ Current scope:     <a href="../../index.html">all classes</a>
 
 <div class="footer">
     
-    <div style="float:right;">generated on 2021-10-02 07:36</div>
+    <div style="float:right;">generated on 2021-10-02 08:50</div>
 </div>
 </body>
 </html>

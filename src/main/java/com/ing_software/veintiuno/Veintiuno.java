@@ -50,18 +50,13 @@ public class Veintiuno { // Clase principal que dirige el juego dependiendo de l
 
     public boolean jugar(String nombreJugador) {
         Jugador jugador = getJugador(nombreJugador);
-        if (!mazo.isEmpty()) {
-            if (jugador.getCartas().isEmpty()) {//Inicia mazo
-                jugador.addCarta(sacarCartaMazo());
-                jugador.addCarta(sacarCartaMazo());
-            } else {
-                jugador.addCarta(sacarCartaMazo());
-            }
-            return jugador.sumarPuntos() <= 21; //Si alguno de los jugadores paso los 21 termina el juego
+        if (jugador.getCartas().isEmpty()) {//Inicia mazo
+            jugador.addCarta(sacarCartaMazo());
+            jugador.addCarta(sacarCartaMazo());
         } else {
-            System.out.println("No quedan más cartas en el mazo");
-            return false;
+            jugador.addCarta(sacarCartaMazo());
         }
+        return jugador.sumarPuntos() <= 21; //Si alguno de los jugadores paso los 21 termina el juego
     }
 
     public String imprimirCartas() { //Impresiones por pantalla
@@ -106,13 +101,7 @@ public class Veintiuno { // Clase principal que dirige el juego dependiendo de l
      * encontrar una carta dentro del mazo
      */
     private Carta sacarCartaMazo() {
-        try {
-            return mazo.remove((int) (Math.random() * mazo.size()));
-        } catch (IndexOutOfBoundsException ex) {
-            System.out.println(ex.getMessage());
-            juegoContinua = false;
-        }
-        return new Carta("-1", "-1");
+        return mazo.remove((int) (Math.random() * mazo.size()));
     }
 
     /**

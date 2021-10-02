@@ -10,7 +10,7 @@ import org.mockito.junit.MockitoJUnitRunner;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 import static org.mockito.Mockito.when;
 
 @RunWith(MockitoJUnitRunner.class)
@@ -20,11 +20,12 @@ public class VeintiunoTest {
     private final List<Jugador> jugadores = new ArrayList<>();
     private Jugador jugador;
     private Jugador casa;
+    private GameAsker gameAsker;
 
     @Before
     public void setup() {
         MockitoAnnotations.initMocks(this);
-        GameAsker gameAsker = Mockito.mock(GameAsker.class);
+        gameAsker = Mockito.mock(GameAsker.class);
         veintiuno = new Veintiuno(gameAsker);
         veintiuno.setJugadores(jugadores);
         jugador = Mockito.mock(Jugador.class);
@@ -41,5 +42,31 @@ public class VeintiunoTest {
         when(jugador.getPuntaje()).thenReturn(0);
         when(casa.getPuntaje()).thenReturn(0);
         assertEquals("Gano la casa", veintiuno.empezarJuego());
+    }
+
+    @Test
+    public void imprimirResultado() {
+        when(jugador.getPuntaje()).thenReturn(0);
+        when(casa.getPuntaje()).thenReturn(0);
+        assertEquals("Gano la casa", veintiuno.imprimirResultado());
+        when(jugador.getPuntaje()).thenReturn(23);
+        when(casa.getPuntaje()).thenReturn(22);
+        assertEquals("Nadie gano", veintiuno.imprimirResultado());
+        when(jugador.getPuntaje()).thenReturn(21);
+        when(casa.getPuntaje()).thenReturn(2);
+        assertEquals("Gano el jugador", veintiuno.imprimirResultado());
+    }
+
+    @Test
+    public void getJugador(){
+        assertNotNull(veintiuno.getJugador("player"));
+    }
+
+    @Test
+    public void jugarUnaCarta(){
+        Jugador player = veintiuno.getJugador("player");
+        veintiuno.jugar("player");
+        veintiuno.jugar("player");
+        assertEquals(3,player.getCartas().size());
     }
 }
