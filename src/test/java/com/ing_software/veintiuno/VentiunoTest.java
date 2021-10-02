@@ -54,12 +54,7 @@ public class VentiunoTest {
         _ventiunoObject.generarMazo();
     }
 
-    @Test
-    public void simulateGetJugadorTest() throws UnsupportedEncodingException {
-
-        assertEquals(false,_ventiunoObject.jugar("casa"));
-    }
-
+ 
 
 
     @Test
