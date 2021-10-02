@@ -18,7 +18,7 @@ public class VeintiunoTest {
     private Jugador casa;
 
     @Before
-    public void setup() throws Exception{
+    public void setup() {
         GameAsker gameAsker = Mockito.mock(GameAsker.class);
         veintiuno = new Veintiuno(gameAsker);
         veintiuno.setJugadores(jugadores);
