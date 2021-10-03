@@ -8,7 +8,7 @@ public class Veintiuno { // Clase principal que dirige el juego dependiendo de l
 
     private final List<Carta> mazo;
     private List<Jugador> jugadores = new ArrayList<>();
-    private boolean juegoContinua = true;
+    private boolean juegoContinua = false;
     private boolean finalizo = false;
     private final GameAsker gameAsker;
 
@@ -21,18 +21,23 @@ public class Veintiuno { // Clase principal que dirige el juego dependiendo de l
     public String empezarJuego() { // Metodo principal que dependiendo de la continuación o juego del jugador direcciona la partida
         do {
             for (Jugador jugador : jugadores) {
-                if (!jugador.getNombre().equals("casa")) {
-                    juegoContinua = jugar(jugador.getNombre());
-                    if (!juegoContinua)
+                if (!jugador.getNombre().equals("casa") && jugador.isJugadorContinua()) {
+                    jugador.setJugadorContinua(jugar(jugador.getNombre()));
+                    if (!jugador.isJugadorContinua())
                         break;
-                } else if (!(jugador.sumarPuntos() == 21))
-                    jugar(jugador.getNombre());
+                    else
+                        juegoContinua = true;
+                } else if (!(jugador.sumarPuntos() == 21) && jugador.isJugadorContinua())
+                    jugador.setJugadorContinua(jugar(jugador.getNombre()));
+
+                if (juegoContinua){
+                    System.out.println(imprimirCartas());
+                    finalizo = jugadorRecibeOtraCarta();
+                    if (finalizo)
+                        break;
+                }
             }
-            System.out.println(imprimirCartas());
-            if (juegoContinua)
-                juegoContinua = confirmar();
-        } while (juegoContinua);
-        finalizo = true;
+        } while (!finalizo);
         System.out.println(imprimirCartas());
         return imprimirResultado();
     }
@@ -50,13 +55,13 @@ public class Veintiuno { // Clase principal que dirige el juego dependiendo de l
 
     public boolean jugar(String nombreJugador) {
         Jugador jugador = getJugador(nombreJugador);
-        if (jugador.getCartas().isEmpty()) {//Inicia mazo
+        if (jugador.getCartas().isEmpty()) {// Le da la mano al jugador
             jugador.addCarta(sacarCartaMazo());
             jugador.addCarta(sacarCartaMazo());
         } else {
             jugador.addCarta(sacarCartaMazo());
         }
-        return jugador.sumarPuntos() <= 21; //Si alguno de los jugadores paso los 21 termina el juego
+        return jugador.sumarPuntos() <= 21; // Si alguno de los jugadores paso los 21 termina el juego
     }
 
     public String imprimirCartas() { //Impresiones por pantalla
@@ -73,10 +78,9 @@ public class Veintiuno { // Clase principal que dirige el juego dependiendo de l
         return mensaje;
     }
 
-    private boolean confirmar() { //Confirma si quiere mas cartas, sino solo juega la casa
+    private boolean jugadorRecibeOtraCarta() { //Confirma si quiere mas cartas, sino solo juega la casa
         System.out.println("\nJugador, quiere mas cartas? (Escriba 'No' para plantar su juego): ");
-        String str = gameAsker.stringAsk();
-        return !"no".equalsIgnoreCase(str);
+        return "no".equalsIgnoreCase(gameAsker.stringAsk());
     }
 
     public String imprimirResultado() { //RESULTADOS: Analiza el puntaje de cada jugador e imprime el resultado

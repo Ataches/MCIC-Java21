@@ -23,19 +23,19 @@ public class jugadorSteps {
 	public boolean estado;
 	private Jugador jugador;
 	private Jugador casa;
-	private Carta carta;
 	private GameAsker gameAsker;
 	private List<Jugador> jugadores = new ArrayList<>();
 
 	@BeforeStep
 	public void setup(){
 		veintiuno = new Veintiuno(gameAsker);
-		jugadores.add(new Jugador("jugador"));
-		jugadores.add(new Jugador("casa"));
+		casa = new Jugador("casa");
+		jugadores.add(casa);
+		jugador = new Jugador("jugador");
+		jugadores.add(jugador);
 		veintiuno.setJugadores(jugadores);
 
 		gameAsker = Mockito.mock(GameAsker.class);
-		carta = new Carta("As", "Picas");
 		when(gameAsker.stringAsk()).thenReturn("no");
 	}
 
@@ -44,27 +44,30 @@ public class jugadorSteps {
 		jugador = veintiuno.getJugador("jugador");
 	}
 
-	@When("inicia el juego")
+	@When("el juego inicia")
 	public void el_juego_inicia() {
 		veintiuno.empezarJuego();
-		assertFalse(jugador.getCartas().isEmpty());
 	}
 
 	@Then("el jugador tiene dos cartas")
 	public void el_jugador_tiene_dos_cartas() {
+		jugador = veintiuno.getJugador("jugador");
 		assert(jugador.getCartas().size() == 2);
 	}
 //--------------------------------------------------------------------------------------------
 
-	@When("el jugador solicita una carta")
-	public void el_jugador_solicita_una_carta() {
-		when(gameAsker.stringAsk())
-				.thenReturn("si").thenReturn("no");
+	@When("el jugador tiene un {int}")
+	public void el_jugador_tiene_un(int puntaje) {
+		jugador = Mockito.mock(Jugador.class);
+		when(jugador.getPuntaje()).thenReturn(puntaje);
 	}
 
-	@When("se valida el {int}")
-	public void se_valida_el_puntaje(int puntaje) {
-		if(!(jugador.sumarPuntos()<=21))
+	@When("el jugador solicita una carta")
+	public void el_jugador_solicita_una_carta() {
+		veintiuno.setJugadores(jugadores);
+		veintiuno.jugar("jugador");
+		jugador = veintiuno.getJugador("jugador");
+		if(!(jugador.getPuntaje()<=21))
 			estado = true;
 	}
 
@@ -72,6 +75,7 @@ public class jugadorSteps {
 
 	@When("se conoce el {int} y el {int}")
 	public void se_conoce_el_puntaje_jugador_y_el_puntaje_casa(int puntaje_jugador, int puntaje_casa) {
+		when(gameAsker.stringAsk()).thenReturn("no");
 		jugadores = new ArrayList<>();
 		casa = Mockito.mock(Jugador.class);
 		jugador = Mockito.mock(Jugador.class);

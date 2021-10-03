@@ -9,6 +9,7 @@ public class  Jugador { // Jugador que tiene las cartas y a su vez metodos para 
     private int puntaje;
     private final List<Carta> jugadorCartas = new ArrayList<>();
     private final List<String> jugadorAses = new ArrayList<>();
+    private boolean jugadorContinua = true;
 
     public Jugador(String nombreJugador) {
       this.nombreJugador = nombreJugador;
@@ -25,7 +26,15 @@ public class  Jugador { // Jugador que tiene las cartas y a su vez metodos para 
     public List<Carta> getCartas(){
       return jugadorCartas;
     }
-    
+
+    public boolean isJugadorContinua() {
+        return jugadorContinua;
+    }
+
+    public void setJugadorContinua(boolean jugadorContinua) {
+        this.jugadorContinua = jugadorContinua;
+    }
+
     public void addCarta(Carta carta){
       jugadorCartas.add(carta);
     }

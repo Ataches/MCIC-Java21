@@ -3,14 +3,14 @@ Feature: jugador juego 21
 
   Scenario: verificar que al jugador le repartan dos cartas
     Given un jugador
-    When inicia el juego
+    When el juego inicia
     Then el jugador tiene dos cartas
 
   Scenario Outline: verificar que un jugador puede recibir cartas siempre y cuando no se superen los 21 puntos
     Given un jugador
-    When el jugador solicita una carta
-    And se valida el <puntaje>
-    Then se reparte una carta : <estado>
+    When el juego inicia
+    When el jugador tiene un <puntaje>
+    And el jugador solicita una carta
 
     Examples:
       | puntaje | estado |
