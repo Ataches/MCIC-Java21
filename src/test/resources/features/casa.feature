@@ -3,11 +3,11 @@ Feature: casa juego 21
 
   Scenario: verificar que como casa me repartan dos cartas
     Given la casa
-    When el juego inicia
+    When inicia el juego
     Then la casa tiene dos cartas
 
   Scenario Outline: verificar que la casa pueda recibir cartas siempre y cuando no se superen los 21 puntos y el jugador se haya plantado
-    Given la casax
+    Given la casa
     When el jugador se planta
     And se valida el <puntaje> de la casa
     Then se reparte una carta : <estado>

@@ -21,21 +21,17 @@ public class Veintiuno { // Clase principal que dirige el juego dependiendo de l
     public String empezarJuego() { // Metodo principal que dependiendo de la continuación o juego del jugador direcciona la partida
         do {
             for (Jugador jugador : jugadores) {
-                if (!jugador.getNombre().equals("casa") && jugador.isJugadorContinua()) {
+                if (!jugador.getNombre().equals("casa")) {
                     jugador.setJugadorContinua(jugar(jugador.getNombre()));
-                    if (!jugador.isJugadorContinua())
-                        break;
-                    else
-                        juegoContinua = true;
-                } else if (!(jugador.sumarPuntos() == 21) && jugador.isJugadorContinua())
+                    if (jugador.isJugadorContinua()) {
+                        System.out.println(imprimirCartas());
+                        finalizo = jugadorNoRecibeOtraCarta();
+                        if (finalizo)
+                            break;
+                    }else
+                        finalizo = true;
+                } else if (!(jugador.sumarPuntos() == 21))
                     jugador.setJugadorContinua(jugar(jugador.getNombre()));
-
-                if (juegoContinua){
-                    System.out.println(imprimirCartas());
-                    finalizo = jugadorRecibeOtraCarta();
-                    if (finalizo)
-                        break;
-                }
             }
         } while (!finalizo);
         System.out.println(imprimirCartas());
@@ -78,7 +74,7 @@ public class Veintiuno { // Clase principal que dirige el juego dependiendo de l
         return mensaje;
     }
 
-    private boolean jugadorRecibeOtraCarta() { //Confirma si quiere mas cartas, sino solo juega la casa
+    private boolean jugadorNoRecibeOtraCarta() { //Confirma si quiere mas cartas, sino solo juega la casa
         System.out.println("\nJugador, quiere mas cartas? (Escriba 'No' para plantar su juego): ");
         return "no".equalsIgnoreCase(gameAsker.stringAsk());
     }
@@ -117,7 +113,7 @@ public class Veintiuno { // Clase principal que dirige el juego dependiendo de l
      */
     public Jugador getJugador(String nombreJugador) {
         Optional<Jugador> optional = jugadores.stream().filter(
-                jugador -> nombreJugador.equals(jugador.getNombre()))
+                        jugador -> nombreJugador.equals(jugador.getNombre()))
                 .findAny();
         if (optional.isPresent())
             return optional.get();

@@ -30,8 +30,10 @@ public class casaSteps {
     @BeforeStep
     public void setup(){
         veintiuno = new Veintiuno(gameAsker);
-        jugadores.add(new Jugador("jugador"));
-        jugadores.add(new Jugador("casa"));
+        casa = new Jugador("casa");
+        jugadores.add(casa);
+        jugador = new Jugador("jugador");
+        jugadores.add(jugador);
         veintiuno.setJugadores(jugadores);
 
         gameAsker = Mockito.mock(GameAsker.class);
@@ -44,15 +46,15 @@ public class casaSteps {
         casa = veintiuno.getJugador("casa");
     }
 
-    @When("el juego inicia")
+    @When("inicia el juego")
     public void el_juego_inicia() {
         veintiuno.empezarJuego();
-        assertFalse(casa.getCartas().isEmpty());
     }
 
 
     @Then("la casa tiene dos cartas")
     public void la_casa_tiene_dos_cartas() {
+        casa = veintiuno.getJugador("casa");
         assert(casa.getCartas().size() == 2);
     }
 
