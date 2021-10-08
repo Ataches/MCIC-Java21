@@ -83,14 +83,14 @@ IntelliJ IDEA
 
 ### Jugador
 
-![image](https://user-images.githubusercontent.com/36229498/135331496-95b6504a-c239-4d39-a5a2-35f8f6dd7e44.png)
+![image](https://user-images.githubusercontent.com/24207969/136636184-3ac3de3e-386b-48c5-9df2-cd426f192788.png)
 
 Link: [Reporte de pruebas para jugador](https://github.com/Ataches/MCIC-Java21/blob/feat/AceptacionFinal/Reporte/Reporte_de_prueba_jugador.html)
 
 ### Casa
 
-![image](https://user-images.githubusercontent.com/36229498/135332052-ec51820c-e4c0-4135-9c36-71d8e9ab4d65.png)
+![image](https://user-images.githubusercontent.com/24207969/136636211-8b51ee05-df1b-4561-ae4c-b0e109363b04.png)
 
-![image](https://user-images.githubusercontent.com/36229498/135332091-4c037ad0-0690-46a4-8a4a-38a9595aa9f9.png)
+![image](https://user-images.githubusercontent.com/24207969/136636226-e4375b39-22c6-4031-9868-8c891e91b7e4.png)
 
 Link: [Reporte de pruebas para casa](https://github.com/Ataches/MCIC-Java21/blob/feat/AceptacionFinal/Reporte/Reporte_de_prueba_casa.html)
