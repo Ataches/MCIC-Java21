@@ -35,7 +35,6 @@ public class VeintiunoTest {
         when(jugador.getNombre()).thenReturn("jugador");
         when(casa.getNombre()).thenReturn("casa");
         when(jugador.isJugadorContinua()).thenReturn(true);
-        when(casa.isJugadorContinua()).thenReturn(true);
         when(gameAsker.stringAsk()).thenReturn("no");
     }
 
