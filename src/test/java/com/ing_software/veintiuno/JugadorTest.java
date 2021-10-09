@@ -1,14 +1,12 @@
 package com.ing_software.veintiuno;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
-
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 import org.mockito.junit.MockitoJUnitRunner;
+
+import static org.junit.Assert.*;
 
 @RunWith(MockitoJUnitRunner.class)
 public class JugadorTest {
@@ -18,7 +16,6 @@ public class JugadorTest {
 	public void setup() {
 		MockitoAnnotations.initMocks(this);
 		jugador = new Jugador("jugador");
-		//jugador.addCarta(new Carta("3", "Corazones"));
 		jugador.addCarta(new Carta("J", "Picas"));
 		jugador.addCarta(new Carta("As", "Picas"));
 	}
@@ -55,13 +52,22 @@ public class JugadorTest {
 	}
 
 	@Test
-	public void testSumarPuntos() {
+	public void sumarPuntos() {
 		// Debe retornar la suma de puntos del mazo y tomar el As como 11
 		assertEquals(21, jugador.sumarPuntos());
 	}
 
 	@Test
-	public void testSumarPuntos2() {
+	public void notAddCard() {
+		jugador.setJugadorContinua(false);
+		jugador.addCarta(new Carta("3", "Corazones"));
+		//Debe retornar la suma de puntos del mazo y tomar el As como 1
+		assertFalse(jugador.isJugadorContinua());
+		assertEquals(21, jugador.sumarPuntos());
+	}
+
+	@Test
+	public void sumarPuntosAs() {
 		jugador.addCarta(new Carta("3", "Corazones"));
 		//Debe retornar la suma de puntos del mazo y tomar el As como 1
 		assertEquals(14, jugador.sumarPuntos());

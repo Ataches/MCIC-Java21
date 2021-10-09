@@ -36,7 +36,8 @@ public class  Jugador { // Jugador que tiene las cartas y a su vez metodos para 
     }
 
     public void addCarta(Carta carta){
-      jugadorCartas.add(carta);
+      if (jugadorContinua)
+        jugadorCartas.add(carta);
     }
 
     public String imprimirCartas(boolean ocultarPrimera) {

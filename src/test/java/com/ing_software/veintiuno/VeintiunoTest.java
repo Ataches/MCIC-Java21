@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.Assert.*;
-import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.*;
 
 @RunWith(MockitoJUnitRunner.class)
 public class VeintiunoTest {
@@ -34,6 +34,8 @@ public class VeintiunoTest {
         jugadores.add(casa);
         when(jugador.getNombre()).thenReturn("jugador");
         when(casa.getNombre()).thenReturn("casa");
+        when(jugador.isJugadorContinua()).thenReturn(true);
+        when(casa.isJugadorContinua()).thenReturn(true);
         when(gameAsker.stringAsk()).thenReturn("no");
     }
 
@@ -46,8 +48,11 @@ public class VeintiunoTest {
 
     @Test
     public void imprimirResultado() {
-        when(jugador.getPuntaje()).thenReturn(0);
-        when(casa.getPuntaje()).thenReturn(0);
+        when(jugador.getPuntaje()).thenReturn(10);
+        when(casa.getPuntaje()).thenReturn(10);
+        assertEquals("Gano la casa", veintiuno.imprimirResultado());
+        when(jugador.getPuntaje()).thenReturn(10);
+        when(casa.getPuntaje()).thenReturn(21);
         assertEquals("Gano la casa", veintiuno.imprimirResultado());
         when(jugador.getPuntaje()).thenReturn(23);
         when(casa.getPuntaje()).thenReturn(22);
@@ -76,5 +81,17 @@ public class VeintiunoTest {
         jugador.addCarta(new Carta("As", "Picas"));
         jugador.addCarta(new Carta("As", "Corazones"));
         assertEquals(12,jugador.sumarPuntos());
+    }
+
+    @Test
+    public void jugadorNoRecibeCarta(){
+        List<Jugador> jugadores = new ArrayList<>();
+        Veintiuno veintiuno = new Veintiuno(gameAsker);
+        jugadores.add(veintiuno.getJugador("casa"));
+        jugadores.add(veintiuno.getJugador("jugador"));
+        veintiuno.setJugadores(jugadores);
+        veintiuno.empezarJuego();
+        jugador = veintiuno.getJugador("jugador");
+        assertEquals(2,jugador.getCartas().size());
     }
 }

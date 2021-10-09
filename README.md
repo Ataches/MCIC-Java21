@@ -57,12 +57,6 @@ IntelliJ IDEA
 
 ## Pruebas unitarias
 
-### Resultados de las pruebas
-
-![](https://firebasestorage.googleapis.com/v0/b/dinny-chat-develop.appspot.com/o/WhatsApp%20Image%202021-10-01%20at%209.40.56%20PM.jpeg?alt=media&token=b347a7fb-4e03-4bca-be21-74faf84546c2)
-
-![](https://firebasestorage.googleapis.com/v0/b/dinny-chat-develop.appspot.com/o/Captura%20de%20Pantalla%202021-10-01%20a%20la(s)%209.17.25%20p.%C2%A0m..png?alt=media&token=156d520d-b4f1-4088-961b-8752319447ba)
-
 ### Cobertura total del código:
 
 ![](reports/.img/coverage_total.jpg)

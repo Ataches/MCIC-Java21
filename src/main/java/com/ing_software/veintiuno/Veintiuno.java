@@ -20,17 +20,20 @@ public class Veintiuno { // Clase principal que dirige el juego dependiendo de l
     public String empezarJuego() { // Metodo principal que dependiendo de la continuación o juego del jugador direcciona la partida
         do {
             for (Jugador jugador : jugadores) {
-                if (!jugador.getNombre().equals("casa")) {
-                    jugador.setJugadorContinua(jugar(jugador.getNombre()));
-                    if (jugador.isJugadorContinua()) {
-                        System.out.println(imprimirCartas());
-                        finalizo = jugadorNoRecibeOtraCarta();
-                        if (finalizo)
-                            break;
-                    }else
-                        finalizo = true;
-                } else if (!(jugador.sumarPuntos() == 21))
-                    jugador.setJugadorContinua(jugar(jugador.getNombre()));
+                if (jugador.isJugadorContinua())
+                    if (!jugador.getNombre().equals("casa")) {
+                        jugador.setJugadorContinua(jugar(jugador.getNombre()));
+                        if (jugador.isJugadorContinua()) {
+                            System.out.println(imprimirCartas());
+                            finalizo = jugadorNoRecibeOtraCarta();
+                            if (finalizo){
+                                jugador.setJugadorContinua(false);
+                                break;
+                            }
+                        } else
+                            finalizo = true;
+                    } else if (!(jugador.sumarPuntos() == 21))
+                        jugador.setJugadorContinua(jugar(jugador.getNombre()));
             }
         } while (!finalizo);
         System.out.println(imprimirCartas());
@@ -81,7 +84,6 @@ public class Veintiuno { // Clase principal que dirige el juego dependiendo de l
     public String imprimirResultado() { //RESULTADOS: Analiza el puntaje de cada jugador e imprime el resultado
         int puntajeCasa = getJugador("casa").getPuntaje();
         int puntajeJugador = getJugador("jugador").getPuntaje();
-
         if ((puntajeCasa > 21) && (puntajeJugador > 21))
             return "Nadie gano";
         if ((puntajeCasa <= 21) &&
