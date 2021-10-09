@@ -13,6 +13,8 @@
 
 ```
 IntelliJ IDEA
+JDK 11 (Corretto version installed by Intellij IDEA)
+Maven 3.8.2
 ```
 
 ## Historias de usuario

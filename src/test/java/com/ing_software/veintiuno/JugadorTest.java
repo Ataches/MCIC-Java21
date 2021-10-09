@@ -58,7 +58,7 @@ public class JugadorTest {
 	}
 
 	@Test
-	public void notAddCard() {
+	public void wontAddCard() {
 		jugador.setJugadorContinua(false);
 		jugador.addCarta(new Carta("3", "Corazones"));
 		//Debe retornar la suma de puntos del mazo y tomar el As como 1
